@@ -1,0 +1,21 @@
+.section-products {
+  padding: 6rem 0;
+  @include addMediaQuery(tablet) {
+    padding: 6rem 2rem;
+  }
+}
+
+.section-shops {
+  padding: 6rem 0;
+  background-color: $color-grey-2;
+  @include addMediaQuery(tablet) {
+    padding: 6rem 2rem;
+  }
+}
+
+.section-news {
+  padding: 6rem 0;
+  @include addMediaQuery(tablet) {
+    padding: 6rem 2rem;
+  }
+}

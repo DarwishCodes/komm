@@ -1,0 +1,77 @@
+.card-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.1rem 2.1rem 2rem 2.1rem;
+  box-shadow: 0px 1px 3px #00000029;
+  min-height: 33.5rem;
+  background-color: $color-grey-2;
+  color: $color-green-dark-1;
+  border-radius: 3px;
+  font-weight: 500;
+  width: 30.7rem;
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__logo {
+    margin-right: 1rem;
+  }
+
+  &__title {
+  }
+
+  &__name {
+    font-size: 2rem;
+    line-height: 1.3;
+    span {
+      display: block;
+      font-weight: 700;
+    }
+  }
+
+  &__content {
+    font-size: 1.6rem;
+    width: 99%;
+    margin-bottom: 2.8rem;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__button-link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: $color-green-dark-1;
+    span {
+      text-decoration: underline;
+      margin-right: 0.5rem;
+    }
+
+    i {
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: right;
+    font-size: 1.6rem;
+  }
+
+  &__nav-text {
+    text-decoration: underline;
+    margin-right: 2rem;
+  }
+
+  &__nav-arrows-group {
+    display: flex;
+  }
+
+  &__nav-arrow {
+    cursor: pointer;
+    margin: 0 0.5rem;
+  }
+}

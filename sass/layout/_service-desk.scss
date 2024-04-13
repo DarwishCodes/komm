@@ -1,0 +1,32 @@
+.service-desk {
+  background-color: $color-grey-2;
+  &__list {
+    list-style: none;
+
+    @include addMediaQuery(laptop) {
+      text-align: center;
+    }
+  }
+
+  &__item {
+    margin: 1rem 0;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    font-size: 2.4rem;
+    color: $color-green-dark-1;
+    span {
+      text-decoration: underline;
+    }
+
+    i {
+      margin-right: 2rem;
+    }
+  }
+
+  @include addMediaQuery(tablet) {
+    padding: 0 2rem;
+  }
+}

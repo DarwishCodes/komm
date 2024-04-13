@@ -1,0 +1,99 @@
+.navbar-nav {
+  font-size: 2rem;
+  font-weight: 500;
+  color: $color-green-dark-1;
+}
+
+.navbar {
+  padding: 2.48rem 0 4rem 0;
+  @include addMediaQuery(tablet) {
+    padding: 2.48rem 2rem 4rem 2rem;
+  }
+}
+
+.nav {
+  position: relative;
+  box-shadow: 0 5px 10px rgba($color-black-1, 0.1);
+}
+.nav-link {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  font-weight: 700;
+  color: $color-green-dark-1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler-icon {
+  font-size: 2.1rem;
+}
+
+.nav-link {
+  &--icon {
+    display: inline-block;
+  }
+
+  &--icon:not(:last-child) {
+    padding: 0 0.2rem !important;
+  }
+  &--icon:last-child {
+    padding: 0 0 0 0.2rem !important;
+  }
+}
+
+.nav-item:not(:last-child) {
+  padding-right: 2.25rem;
+  padding-left: 2.25rem;
+
+  @include addMediaQuery(laptop) {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+}
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.3rem 0;
+
+  @include addMediaQuery(laptop) {
+    justify-content: center;
+  }
+
+  @include addMediaQuery(tablet) {
+    margin: 0;
+  }
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.3rem 0;
+    padding-left: 0;
+    @include addMediaQuery(laptop) {
+      justify-content: center;
+    }
+    @include addMediaQuery(tablet) {
+      margin: 0;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    font-size: 1.5rem;
+    color: $color-green-dark-1;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-green-dark-1;
+    @include addMediaQuery(tablet) {
+      font-size: 1rem;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin: 0rem 1rem;
+  }
+}
