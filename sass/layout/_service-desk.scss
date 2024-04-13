@@ -5,6 +5,7 @@
 
     @include addMediaQuery(laptop) {
       text-align: center;
+      padding-left: 0;
     }
   }
 
