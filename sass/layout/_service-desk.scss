@@ -23,9 +23,9 @@
     top: 0;
     height: 100%;
     width: 50%;
-    background-image: url("../img/footer.jpg");
+    background-image: url("../img/footer.png");
     background-size: cover;
-    background-position: right;
+    background-position: left;
 
     @include addMediaQuery(laptop) {
       display: none;

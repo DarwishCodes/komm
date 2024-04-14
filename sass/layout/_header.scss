@@ -16,6 +16,25 @@
       rgba(0, 0, 0, 0) 100%
     );
   }
+
+  &--full-backgd {
+    background: linear-gradient(
+      to right,
+      $color-grey-1,
+      100%,
+      rgba(0, 0, 0, 0) 100%
+    );
+
+    @include addMediaQuery(laptop) {
+      position: relative;
+      background: linear-gradient(
+        to right,
+        $color-grey-1,
+        100%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+  }
   &__box {
     min-height: 74.2rem;
     display: flex;
@@ -31,6 +50,10 @@
     &--height-60 {
       min-height: 60rem;
     }
+
+    &--height-18 {
+      min-height: 18.5rem;
+    }
   }
 
   &__background-box {
@@ -42,6 +65,10 @@
   &__image {
     width: 100%;
     opacity: 0.1;
+
+    @include addMediaQuery(laptop) {
+      width: 50%;
+    }
   }
 
   &__right {
@@ -50,12 +77,16 @@
     top: 0;
     height: 100%;
     width: 50%;
-    background-image: url("../img/hero.jpg");
+    background-image: url("../img/hero.png");
     background-size: cover;
-    background-position: right;
+    background-position: left;
 
     @include addMediaQuery(laptop) {
       display: none;
+    }
+
+    &--image-2 {
+      background-image: url("../img/hero-2.png");
     }
   }
 

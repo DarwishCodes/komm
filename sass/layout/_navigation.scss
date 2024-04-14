@@ -14,6 +14,7 @@
 .nav {
   position: relative;
   box-shadow: 0 5px 10px rgba($color-black-1, 0.1);
+  background-color: $color-white;
 }
 .nav-link {
   padding-right: 0 !important;
@@ -30,20 +31,27 @@
 .navbar-toggler-icon {
   font-size: 2.1rem;
 }
+.navbar-brand {
+  img {
+    @include addMediaQuery(tablet) {
+      height: 2.5rem;
+    }
+  }
+}
 
 .nav-link {
   i {
-    color: $color-green-2;
+    color: $color-primary;
   }
   &--icon {
     display: inline-block;
   }
 
   &--icon:not(:last-child) {
-    padding: 0 0.2rem !important;
+    padding: 0 0.5rem !important;
   }
   &--icon:last-child {
-    padding: 0 0 0 0.2rem !important;
+    padding: 0 0 0 0.5rem !important;
   }
 }
 
@@ -71,6 +79,7 @@
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     margin: 0.3rem 0;
     padding-left: 0;
@@ -96,7 +105,7 @@
     }
 
     i {
-      color: $color-green-2;
+      color: $color-primary;
     }
   }
 

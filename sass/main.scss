@@ -10,16 +10,21 @@
 @import "components/breadcrumbs";
 @import "components/button";
 @import "components/card-news";
+@import "components/card-order";
 @import "components/card-product";
 @import "components/card-shops";
 @import "components/file-download";
 @import "components/product-component";
+@import "components/search-product";
 
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/left-panel";
+
 @import "layout/service-desk";
 
 @import "pages/home";
+@import "pages/our-shop";
 @import "pages/product";
