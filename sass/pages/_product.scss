@@ -1,0 +1,29 @@
+.section-suite {
+  padding: 10rem 0 8rem 0;
+  @include addMediaQuery(tablet) {
+    padding: 6rem 2rem;
+  }
+}
+
+.section-advantages {
+  padding: 10rem 0 8rem 0;
+  background-color: $color-grey-2;
+  @include addMediaQuery(tablet) {
+    padding: 6rem 2rem;
+  }
+}
+
+.section-product-components {
+  padding: 10rem 0 8rem 0;
+  @include addMediaQuery(tablet) {
+    padding: 6rem 2rem;
+  }
+}
+
+.section-best-selling {
+  padding: 10rem 0 8rem 0;
+  background-color: $color-grey-2;
+  @include addMediaQuery(tablet) {
+    padding: 6rem 2rem;
+  }
+}

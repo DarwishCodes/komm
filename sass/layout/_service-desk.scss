@@ -1,5 +1,37 @@
 .service-desk {
-  background-color: $color-grey-2;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    $color-grey-2,
+    50%,
+    rgba(0, 0, 0, 0) 50%
+  );
+
+  @include addMediaQuery(laptop) {
+    position: relative;
+    background: linear-gradient(
+      to right,
+      $color-grey-2,
+      50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  &__right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url("../img/footer.jpg");
+    background-size: cover;
+    background-position: right;
+
+    @include addMediaQuery(laptop) {
+      display: none;
+    }
+  }
+
   &__list {
     list-style: none;
 
@@ -29,5 +61,11 @@
 
   @include addMediaQuery(tablet) {
     padding: 0 2rem;
+  }
+
+  &__left {
+  }
+
+  &__right {
   }
 }

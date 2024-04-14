@@ -16,6 +16,11 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
@@ -33,19 +38,34 @@
             <div class="top-nav">
               <ul class="top-nav__list">
                 <li class="top-nav__item">
-                  <a class="top-nav__link" href="#">Leichte Sprache</a>
+                  <a class="top-nav__link" href="#">
+                    <span class="top-nav__icon"
+                      ><i class="fa-light fa-book-open-reader"></i
+                    ></span>
+                    Leichte Sprache</a
+                  >
                 </li>
                 <li class="top-nav__item">
-                  <a class="top-nav__link" href="#">Gebardensprache</a>
+                  <a class="top-nav__link" href="#">
+                    <span class="top-nav__icon"
+                      ><i class="fa-light fa-hands"></i></span
+                    >Gebardensprache</a
+                  >
                 </li>
                 <li class="top-nav__item">
-                  <a class="top-nav__link" href="#">Mitgliederportal</a>
+                  <a class="top-nav__link" href="#">
+                    <span class="top-nav__icon"
+                      ><i class="fa-regular fa-user"></i></span
+                    >Mitgliederportal</a
+                  >
                 </li>
               </ul>
             </div>
             <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
-                <a class="navbar-brand" href="#">{LOGO}</a>
+                <a class="navbar-brand" href="#"
+                  ><img src="img/logo.png" alt=""
+                /></a>
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -64,8 +84,9 @@
                   <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                       <a class="nav-link" aria-current="page" href="#"
-                        >PRODUKTINFOS</a
-                      >
+                        >PRODUKTINFOS
+                        <i class="fa-regular fa-arrow-up-right"></i
+                      ></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" aria-current="page" href="#">SHOP</a>
@@ -76,15 +97,15 @@
                         aria-current="page"
                         href="#"
                       >
-                        {ICO}</a
-                      >
+                        <i class="fa-regular fa-user"></i
+                      ></a>
                       |
                       <a
                         class="nav-link nav-link--icon"
                         aria-current="page"
                         href="#"
-                        >{ICO}</a
-                      >
+                        ><i class="fa-regular fa-cart-shopping"></i
+                      ></a>
                     </li>
                   </ul>
                 </div>
@@ -95,27 +116,34 @@
       </div>
 
       <div class="hero">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="hero__box">
-                <div class="hero__text">
-                  <div class="heading--primary u-margin-bottom-large">
-                    WILLKOMMEN
-                  </div>
-                  <div class="heading--secondary u-margin-bottom-medium">
-                    auf dem <span>WEBSHOP</span> der Komm.ONE
-                  </div>
-                  <div class="heading--fourth">
-                    Lorem ipsum dolor sit amet, conse-tetur sadipscing elitr,
-                    sed diam nonu eirmod tempor invidunt ut
+        <div class="hero__left">
+          <div class="hero__background-box">
+            <img class="hero__image" src="/img/globe.png" alt="Globe" />
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="hero__box">
+                  <div class="hero__text">
+                    <div class="heading--primary u-margin-bottom-large">
+                      WILLKOMMEN
+                    </div>
+                    <div class="heading--secondary u-margin-bottom-medium">
+                      auf dem <span>WEBSHOP</span> der Komm.ONE
+                    </div>
+                    <div class="heading--fourth">
+                      Lorem ipsum dolor sit amet, conse-tetur sadipscing elitr,
+                      sed diam nonu eirmod tempor invidunt ut
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">{IMAGE}</div>
+            <div class="col-lg-6"></div>
           </div>
         </div>
+
+        <div class="hero__right"></div>
       </div>
     </header>
     <main>
@@ -145,7 +173,9 @@
             <div class="col-lg-4">
               <div class="card-product card-product--cyan">
                 <div class="card-product__top">
-                  <div class="card-product__logo">{ICO}</div>
+                  <div class="card-product__logo">
+                    <img src="img/icon-1.png" alt="" />
+                  </div>
                   <div class="card-product__title">
                     <p class="card-product__name">
                       Komm.ONE <span>Bauen & Umwelt</span>
@@ -156,14 +186,17 @@
                   Alle Produkte von Abfall-überwachung bis Geoinformation.
                 </p>
                 <a href="#" class="card-product__button-link"
-                  ><span>mehr erfahren</span> <i>{ICO}</i></a
-                >
+                  ><span>mehr erfahren</span>
+                  <i><i class="fa-light fa-arrow-right"></i></i
+                ></a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card-product card-product--green">
                 <div class="card-product__top">
-                  <div class="card-product__logo">{ICO}</div>
+                  <div class="card-product__logo">
+                    <img src="img/icon-2.png" alt="" />
+                  </div>
                   <div class="card-product__title">
                     <p class="card-product__name">
                       Komm.ONE <span>Finanzen & Personal</span>
@@ -174,14 +207,17 @@
                   Alle Produkte für Ihre Aufgaben im Finanz- und Personalwesen.
                 </p>
                 <a href="#" class="card-product__button-link"
-                  ><span>mehr erfahren</span> <i>{ICO}</i></a
-                >
+                  ><span>mehr erfahren</span>
+                  <i><i class="fa-light fa-arrow-right"></i></i
+                ></a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card-product card-product--yellow-green">
                 <div class="card-product__top">
-                  <div class="card-product__logo">{ICO}</div>
+                  <div class="card-product__logo">
+                    <img src="img/icon-3.png" alt="" />
+                  </div>
                   <div class="card-product__title">
                     <p class="card-product__name">
                       Komm.ONE <span>Bildung & Soziales</span>
@@ -192,14 +228,17 @@
                   Alle Produkte von Bibliothek bis Wohngeld.
                 </p>
                 <a href="#" class="card-product__button-link"
-                  ><span>mehr erfahren</span> <i>{ICO}</i></a
-                >
+                  ><span>mehr erfahren</span>
+                  <i><i class="fa-light fa-arrow-right"></i></i
+                ></a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card-product card-product--orange">
                 <div class="card-product__top">
-                  <div class="card-product__logo">{ICO}</div>
+                  <div class="card-product__logo">
+                    <img src="img/icon-4.png" alt="" />
+                  </div>
                   <div class="card-product__title">
                     <p class="card-product__name">
                       Komm.ONE <span>Burgerservices</span>
@@ -211,14 +250,17 @@
                   Ordnungs-widrigkeiten und Verkehr
                 </p>
                 <a href="#" class="card-product__button-link"
-                  ><span>mehr erfahren</span> <i>{ICO}</i></a
-                >
+                  ><span>mehr erfahren</span>
+                  <i><i class="fa-light fa-arrow-right"></i></i
+                ></a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card-product card-product--blue">
                 <div class="card-product__top">
-                  <div class="card-product__logo">{ICO}</div>
+                  <div class="card-product__logo">
+                    <img src="img/icon-5.png" alt="" />
+                  </div>
                   <div class="card-product__title">
                     <p class="card-product__name">
                       Komm.ONE <span>Digitale Daten</span>
@@ -229,14 +271,17 @@
                   Alle Produkte von Chatbot bis Sitzungsmanagement.
                 </p>
                 <a href="#" class="card-product__button-link"
-                  ><span>mehr erfahren</span> <i>{ICO}</i></a
-                >
+                  ><span>mehr erfahren</span>
+                  <i><i class="fa-light fa-arrow-right"></i></i
+                ></a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card-product card-product--purple">
                 <div class="card-product__top">
-                  <div class="card-product__logo">{ICO}</div>
+                  <div class="card-product__logo">
+                    <img src="img/icon-6.png" alt="" />
+                  </div>
                   <div class="card-product__title">
                     <p class="card-product__name">
                       Komm.ONE <span>Infrastruktur</span>
@@ -248,8 +293,9 @@
                   Ordnungs-widrigkeiten und Verkehr
                 </p>
                 <a href="#" class="card-product__button-link"
-                  ><span>mehr erfahren</span> <i>{ICO}</i></a
-                >
+                  ><span>mehr erfahren</span>
+                  <i><i class="fa-light fa-arrow-right"></i></i
+                ></a>
               </div>
             </div>
           </div>
@@ -281,79 +327,103 @@
             <div class="col-lg-4">
               <div class="card-shop card-shop--cyan">
                 <div class="card-shop__top">
-                  <div class="card-shop__logo">{ICO}</div>
+                  <div class="card-shop__logo">
+                    <img src="img/icon-7.png" alt="" />
+                  </div>
                   <div class="card-shop__title">
                     <p class="card-shop__name">
                       <span>Abfallüberwachungs-system</span>
                     </p>
                   </div>
                 </div>
-                <a href="#" class="card-shop__button-link"><i>{ICO}</i></a>
+                <a href="#" class="card-shop__button-link"
+                  ><i class="fa-light fa-arrow-right"></i
+                ></a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card-shop card-shop--green">
                 <div class="card-shop__top">
-                  <div class="card-shop__logo">{ICO}</div>
+                  <div class="card-shop__logo">
+                    <img src="img/icon-8.png" alt="" />
+                  </div>
                   <div class="card-shop__title">
                     <p class="card-shop__name">
                       <span>KM-Rechnungsein-gangsworkflow</span>
                     </p>
                   </div>
                 </div>
-                <a href="#" class="card-shop__button-link"><i>{ICO}</i></a>
+                <a href="#" class="card-shop__button-link"
+                  ><i class="fa-light fa-arrow-right"></i
+                ></a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card-shop card-shop--purple">
                 <div class="card-shop__top">
-                  <div class="card-shop__logo">{ICO}</div>
+                  <div class="card-shop__logo">
+                    <img src="img/icon-9.png" alt="" />
+                  </div>
                   <div class="card-shop__title">
                     <p class="card-shop__name">
                       <span>Mobile Device Management</span>
                     </p>
                   </div>
                 </div>
-                <a href="#" class="card-shop__button-link"><i>{ICO}</i></a>
+                <a href="#" class="card-shop__button-link"
+                  ><i class="fa-light fa-arrow-right"></i
+                ></a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card-shop card-shop--orange">
                 <div class="card-shop__top">
-                  <div class="card-shop__logo">{ICO}</div>
+                  <div class="card-shop__logo">
+                    <img src="img/icon-10.png" alt="" />
+                  </div>
                   <div class="card-shop__title">
                     <p class="card-shop__name">
                       <span>Flüchtlingsmanagement</span>
                     </p>
                   </div>
                 </div>
-                <a href="#" class="card-shop__button-link"><i>{ICO}</i></a>
+                <a href="#" class="card-shop__button-link"
+                  ><i class="fa-light fa-arrow-right"></i
+                ></a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card-shop card-shop--cyan">
                 <div class="card-shop__top">
-                  <div class="card-shop__logo">{ICO}</div>
+                  <div class="card-shop__logo">
+                    <img src="img/icon-11.png" alt="" />
+                  </div>
                   <div class="card-shop__title">
                     <p class="card-shop__name">
                       <span>Abfallüberwachungs-system</span>
                     </p>
                   </div>
                 </div>
-                <a href="#" class="card-shop__button-link"><i>{ICO}</i></a>
+                <a href="#" class="card-shop__button-link"
+                  ><i class="fa-light fa-arrow-right"></i
+                ></a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card-shop card-shop--green">
                 <div class="card-shop__top">
-                  <div class="card-shop__logo">{ICO}</div>
+                  <div class="card-shop__logo">
+                    <img src="img/icon-12.png" alt="" />
+                  </div>
                   <div class="card-shop__title">
                     <p class="card-shop__name">
                       <span>KM-Rechnungsein-gangsworkflow</span>
                     </p>
                   </div>
                 </div>
-                <a href="#" class="card-shop__button-link"><i>{ICO}</i></a>
+                <a href="#" class="card-shop__button-link"
+                  ><i class="fa-light fa-arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -379,8 +449,12 @@
             <div class="card-news__nav">
               <p class="card-news__nav-text">zu allen Meldungen</p>
               <div class="card-news__nav-arrows-group">
-                <div class="prev card-news__nav-arrow">{PREV}</div>
-                <div class="next card-news__nav-arrow">{NEXT}</div>
+                <div class="prev card-news__nav-arrow">
+                  <i class="fa-light fa-arrow-left"></i>
+                </div>
+                <div class="next card-news__nav-arrow">
+                  <i class="fa-light fa-arrow-right"></i>
+                </div>
               </div>
             </div>
             <div class="owl-carousel">
@@ -402,8 +476,9 @@
                   voluptua.
                 </div>
                 <a href="#" class="card-product__button-link"
-                  ><span>mehr erfahren</span> <i>{ICO}</i></a
-                >
+                  ><span>mehr erfahren</span>
+                  <i><i class="fa-light fa-arrow-right"></i></i
+                ></a>
               </div>
               <div class="card-news card-news--cyan">
                 <div class="card-news__top">
@@ -420,8 +495,9 @@
                   voluptua.
                 </div>
                 <a href="#" class="card-product__button-link"
-                  ><span>mehr erfahren</span> <i>{ICO}</i></a
-                >
+                  ><span>mehr erfahren</span>
+                  <i><i class="fa-light fa-arrow-right"></i></i
+                ></a>
               </div>
               <div class="card-news card-news--cyan">
                 <div class="card-news__top">
@@ -441,8 +517,9 @@
                   voluptua.
                 </div>
                 <a href="#" class="card-product__button-link"
-                  ><span>mehr erfahren</span> <i>{ICO}</i></a
-                >
+                  ><span>mehr erfahren</span>
+                  <i><i class="fa-light fa-arrow-right"></i></i
+                ></a>
               </div>
 
               <div class="card-news card-news--cyan">
@@ -463,8 +540,9 @@
                   voluptua.
                 </div>
                 <a href="#" class="card-product__button-link"
-                  ><span>mehr erfahren</span> <i>{ICO}</i></a
-                >
+                  ><span>mehr erfahren</span>
+                  <i><i class="fa-light fa-arrow-right"></i></i
+                ></a>
               </div>
               <div class="card-news card-news--cyan">
                 <div class="card-news__top">
@@ -484,72 +562,82 @@
                   voluptua.
                 </div>
                 <a href="#" class="card-product__button-link"
-                  ><span>mehr erfahren</span> <i>{ICO}</i></a
-                >
+                  ><span>mehr erfahren</span>
+                  <i><i class="fa-light fa-arrow-right"></i></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="service-desk">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="service-desk__left">
-                <div class="heading">
-                  <div class="u-width-70 u-margin-top-large">
-                    <h2 class="heading--secondary">
-                      <span>SERVICE</span> DESK
-                    </h2>
+        <div class="service-desk__left">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="service-desk__left">
+                  <div class="heading">
+                    <div class="u-width-70 u-margin-top-large">
+                      <h2 class="heading--secondary">
+                        <span>SERVICE</span> DESK
+                      </h2>
+                    </div>
+                    <div class="u-margin-bottom-large">
+                      <h3 class="heading--tertiary">
+                        Sie benötigen
+                        <span>Hilfe?</span>
+                      </h3>
+                    </div>
+                    <div class="u-margin-bottom-large">
+                      <h2 class="heading--fourth">
+                        Erreichbarkeit: Mo – Fr 8:00 bis 17:00 Uhr
+                      </h2>
+                    </div>
                   </div>
                   <div class="u-margin-bottom-large">
-                    <h3 class="heading--tertiary">
-                      Sie benötigen
-                      <span>Hilfe?</span>
-                    </h3>
+                    <ul class="service-desk__list">
+                      <li class="service-desk__item">
+                        <a href="#" class="service-desk__link">
+                          <i><i class="fa-light fa-arrow-right"></i></i
+                          ><span>Service Desk</span></a
+                        >
+                      </li>
+                      <li class="service-desk__item">
+                        <a href="#" class="service-desk__link">
+                          <i><i class="fa-light fa-arrow-right"></i></i
+                          ><span>Service Teams</span></a
+                        >
+                      </li>
+                      <li class="service-desk__item">
+                        <a href="#" class="service-desk__link">
+                          <i><i class="fa-light fa-arrow-right"></i></i
+                          ><span>Serviceportal</span></a
+                        >
+                      </li>
+                      <li class="service-desk__item">
+                        <a href="#" class="service-desk__link">
+                          <i><i class="fa-light fa-arrow-right"></i></i
+                          ><span>Fachsupport</span></a
+                        >
+                      </li>
+                    </ul>
                   </div>
-                  <div class="u-margin-bottom-large">
-                    <h2 class="heading--fourth">
-                      Erreichbarkeit: Mo – Fr 8:00 bis 17:00 Uhr
-                    </h2>
-                  </div>
-                </div>
-                <div class="u-margin-bottom-large">
-                  <ul class="service-desk__list">
-                    <li class="service-desk__item">
-                      <a href="#" class="service-desk__link">
-                        <i>{ICO}</i><span>Service Desk</span></a
-                      >
-                    </li>
-                    <li class="service-desk__item">
-                      <a href="#" class="service-desk__link">
-                        <i>{ICO}</i><span>Service Teams</span></a
-                      >
-                    </li>
-                    <li class="service-desk__item">
-                      <a href="#" class="service-desk__link">
-                        <i>{ICO}</i><span>Serviceportal</span></a
-                      >
-                    </li>
-                    <li class="service-desk__item">
-                      <a href="#" class="service-desk__link">
-                        <i>{ICO}</i><span>Fachsupport</span></a
-                      >
-                    </li>
-                  </ul>
                 </div>
               </div>
+              <div class="col-lg-6"></div>
             </div>
-            <div class="col-lg-6">{IMAGE}</div>
           </div>
         </div>
+        <div class="service-desk__right"></div>
       </section>
       <footer class="footer">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
               <div class="footer__left">
-                <div class="footer__logo">{LOGO}</div>
+                <div class="footer__logo">
+                  <img src="img/logo-2.png" alt="" />
+                </div>
                 <div class="footer__address">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Aliquid doloribus voluptates

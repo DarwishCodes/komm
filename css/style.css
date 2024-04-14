@@ -41,6 +41,12 @@ body {
       font-size: 2.8rem; } }
   .heading--secondary span {
     color: #008481; }
+  .heading--secondary .color-blue {
+    color: #0079bd; }
+  .heading--secondary--color-white {
+    color: #ffffff; }
+  .heading--secondary--color-blue {
+    color: #0079bd; }
 
 .heading--tertiary {
   font-weight: 500;
@@ -59,7 +65,18 @@ body {
   font-size: 2.4rem; }
   @media (max-width: 768px) {
     .heading--fourth {
-      font-size: 1.4rem; } }
+      font-size: 2.2rem; } }
+  .heading--fourth--font-weight-700 {
+    font-weight: 700; }
+
+.paragraph {
+  color: #0f2c30;
+  font-size: 2rem;
+  font-weight: 400; }
+  .paragraph--color-white {
+    color: #ffffff; }
+  .paragraph--font-weight-500 {
+    font-weight: 500; }
 
 .u-center-text {
   text-align: center; }
@@ -100,12 +117,19 @@ body {
     .u-width-70 {
       width: 100%; } }
 
+.breadcrumbs {
+  font-size: 1.6rem;
+  color: #9bb0b3;
+  margin-top: 1rem; }
+
 .btn {
   border: none;
   border-radius: 0;
   font-size: 1.6rem;
   padding: 1rem 2.3rem;
   font-weight: 500; }
+  .btn--size-medium {
+    font-size: 2rem; }
 
 .btn-primary {
   background-color: #f1c400;
@@ -179,6 +203,8 @@ body {
     align-items: center; }
   .card-product__logo {
     margin-right: 1rem; }
+    .card-product__logo img {
+      height: 4rem; }
   .card-product__name {
     font-size: 2rem;
     line-height: 1.3; }
@@ -222,6 +248,8 @@ body {
     align-items: center; }
   .card-shop__logo {
     margin-right: 1rem; }
+    .card-shop__logo img {
+      height: 4rem; }
   .card-shop__name {
     font-size: 2rem;
     line-height: 1.3; }
@@ -253,6 +281,32 @@ body {
   .card-shop--purple {
     background-color: #f0f0ff;
     border: 1px solid #9c9cff; }
+
+.file-download {
+  display: flex;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #0f2c30; }
+  .file-download__icon-box {
+    margin-right: 2rem; }
+
+.product-compt {
+  display: flex;
+  align-items: center; }
+  .product-compt__logo {
+    margin-right: 2rem; }
+  .product-compt__title {
+    text-decoration: underline; }
+  .product-compt__name {
+    font-size: 2rem;
+    line-height: 1.3; }
+    .product-compt__name span {
+      display: block;
+      font-weight: 700; }
+  @media (max-width: 992px) {
+    .product-compt {
+      justify-content: center; } }
 
 .footer {
   padding: 1.5rem 0;
@@ -296,16 +350,43 @@ body {
       color: #f1c400; }
 
 .hero {
-  background-color: #e5ebeb; }
+  position: relative;
+  background: linear-gradient(to right, #f2f5f5, 50%, rgba(0, 0, 0, 0) 50%); }
+  @media (max-width: 992px) {
+    .hero {
+      position: relative;
+      background: linear-gradient(to right, #f2f5f5, 50%, rgba(0, 0, 0, 0) 100%); } }
   .hero__box {
     min-height: 74.2rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
     @media (max-width: 992px) {
       .hero__box {
         text-align: center;
         justify-content: center;
         min-height: 40.2rem; } }
+    .hero__box--height-60 {
+      min-height: 60rem; }
+  .hero__background-box {
+    position: absolute;
+    top: 20%;
+    left: 5%; }
+  .hero__image {
+    width: 100%;
+    opacity: 0.1; }
+  .hero__right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: right; }
+    @media (max-width: 992px) {
+      .hero__right {
+        display: none; } }
   .hero__text {
     width: 45.5rem; }
     @media (max-width: 768px) {
@@ -315,6 +396,25 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     color: #003a40; }
+  .hero__top {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin-bottom: 1rem; }
+    @media (max-width: 992px) {
+      .hero__top {
+        justify-content: center; } }
+  .hero__logo {
+    margin-right: 2.2rem; }
+  .hero__name {
+    font-size: 2.8rem;
+    line-height: 1.3;
+    font-weight: 400; }
+    .hero__name span {
+      display: block;
+      font-weight: 600; }
+  .hero--green-dark {
+    background-color: #0f2c30; }
 
 .navbar-nav {
   font-size: 2rem;
@@ -343,6 +443,9 @@ body {
 
 .navbar-toggler-icon {
   font-size: 2.1rem; }
+
+.nav-link i {
+  color: #00ba73; }
 
 .nav-link--icon {
   display: inline-block; }
@@ -392,11 +495,32 @@ body {
     @media (max-width: 768px) {
       .top-nav__link {
         font-size: 1rem; } }
+    .top-nav__link i {
+      color: #00ba73; }
+  .top-nav__icon {
+    margin-right: 0.5rem; }
   .top-nav__item:not(:last-child) {
     margin: 0rem 1rem; }
 
 .service-desk {
-  background-color: #f2f5f5; }
+  position: relative;
+  background: linear-gradient(to right, #f2f5f5, 50%, rgba(0, 0, 0, 0) 50%); }
+  @media (max-width: 992px) {
+    .service-desk {
+      position: relative;
+      background: linear-gradient(to right, #f2f5f5, 50%, rgba(0, 0, 0, 0) 100%); } }
+  .service-desk__right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url("../img/footer.jpg");
+    background-size: cover;
+    background-position: right; }
+    @media (max-width: 992px) {
+      .service-desk__right {
+        display: none; } }
   .service-desk__list {
     list-style: none; }
     @media (max-width: 992px) {
@@ -434,4 +558,30 @@ body {
   padding: 10rem 0 10rem 0; }
   @media (max-width: 768px) {
     .section-news {
+      padding: 6rem 2rem; } }
+
+.section-suite {
+  padding: 10rem 0 8rem 0; }
+  @media (max-width: 768px) {
+    .section-suite {
+      padding: 6rem 2rem; } }
+
+.section-advantages {
+  padding: 10rem 0 8rem 0;
+  background-color: #f2f5f5; }
+  @media (max-width: 768px) {
+    .section-advantages {
+      padding: 6rem 2rem; } }
+
+.section-product-components {
+  padding: 10rem 0 8rem 0; }
+  @media (max-width: 768px) {
+    .section-product-components {
+      padding: 6rem 2rem; } }
+
+.section-best-selling {
+  padding: 10rem 0 8rem 0;
+  background-color: #f2f5f5; }
+  @media (max-width: 768px) {
+    .section-best-selling {
       padding: 6rem 2rem; } }

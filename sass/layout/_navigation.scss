@@ -32,6 +32,9 @@
 }
 
 .nav-link {
+  i {
+    color: $color-green-2;
+  }
   &--icon {
     display: inline-block;
   }
@@ -91,6 +94,14 @@
     @include addMediaQuery(tablet) {
       font-size: 1rem;
     }
+
+    i {
+      color: $color-green-2;
+    }
+  }
+
+  &__icon {
+    margin-right: 0.5rem;
   }
 
   &__item:not(:last-child) {

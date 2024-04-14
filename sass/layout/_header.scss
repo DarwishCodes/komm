@@ -1,15 +1,61 @@
 .hero {
-  background-color: $color-grey-1;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    $color-grey-2,
+    50%,
+    rgba(0, 0, 0, 0) 50%
+  );
 
+  @include addMediaQuery(laptop) {
+    position: relative;
+    background: linear-gradient(
+      to right,
+      $color-grey-2,
+      50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
   &__box {
     min-height: 74.2rem;
     display: flex;
     align-items: center;
+    position: relative;
 
     @include addMediaQuery(laptop) {
       text-align: center;
       justify-content: center;
       min-height: 40.2rem;
+    }
+
+    &--height-60 {
+      min-height: 60rem;
+    }
+  }
+
+  &__background-box {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+
+  &__image {
+    width: 100%;
+    opacity: 0.1;
+  }
+
+  &__right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: right;
+
+    @include addMediaQuery(laptop) {
+      display: none;
     }
   }
 
@@ -24,5 +70,37 @@
     font-size: 1.5rem;
     font-weight: 400;
     color: $color-green-dark-1;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    color: $color-white;
+    margin-bottom: 1rem;
+
+    @include addMediaQuery(laptop) {
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    margin-right: 2.2rem;
+  }
+
+  &__title {
+  }
+
+  &__name {
+    font-size: 2.8rem;
+    line-height: 1.3;
+    font-weight: 400;
+    span {
+      display: block;
+      font-weight: 600;
+    }
+  }
+
+  &--green-dark {
+    background-color: $color-green-dark-2;
   }
 }
