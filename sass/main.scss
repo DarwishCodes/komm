@@ -7,6 +7,7 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/accordion";
 @import "components/breadcrumbs";
 @import "components/button";
 @import "components/card-news";
@@ -15,9 +16,11 @@
 @import "components/card-shops";
 @import "components/file-download";
 @import "components/modal";
+@import "components/pagination";
 @import "components/product-component";
 @import "components/profile";
 @import "components/search-product";
+@import "components/table";
 
 @import "layout/contact";
 @import "layout/footer";
@@ -30,5 +33,6 @@
 
 @import "pages/account";
 @import "pages/home";
+@import "pages/order-history";
 @import "pages/our-shop";
 @import "pages/product";

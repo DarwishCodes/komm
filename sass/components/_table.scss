@@ -1,0 +1,28 @@
+.table-custom {
+  &__heading {
+    background-color: $color-grey-6;
+
+    th {
+      padding: 1.5rem 3.2rem;
+    }
+  }
+
+  &__col {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  &__row {
+    td {
+      padding: 1.5rem 3.2rem;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+
+    th {
+      padding: 1.5rem 3.2rem;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+}

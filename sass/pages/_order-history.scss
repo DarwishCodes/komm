@@ -1,0 +1,12 @@
+.section-order-history {
+  padding: 1rem 0 13.2rem 0;
+
+  @include addMediaQuery(laptop) {
+    padding: 1rem 2rem 13.2rem 2rem;
+  }
+  &__filter {
+    display: flex;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+  }
+}

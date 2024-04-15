@@ -108,6 +108,12 @@ body {
     .u-margin-top-large {
       margin-top: 3rem; } }
 
+.u-margin-right-small {
+  margin-right: 2rem; }
+
+.u-margin-right-medium {
+  margin-right: 5rem; }
+
 .u-margin-right-large {
   margin-right: 13.3rem; }
 
@@ -128,6 +134,72 @@ body {
   @media (max-width: 992px) {
     .u-width-70 {
       width: 100%; } }
+
+.accordion-custom {
+  border: none;
+  background-color: #f2f5f5;
+  padding: 0; }
+  .accordion-custom__header {
+    font-size: 2.4rem; }
+  @media (max-width: 992px) {
+    .accordion-custom__total {
+      display: flex;
+      flex-direction: column; } }
+  .accordion-custom__button {
+    background-color: #008481;
+    color: #ffffff;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 0 !important;
+    font-size: 2.4rem;
+    padding: 2.3rem 5rem; }
+    @media (max-width: 992px) {
+      .accordion-custom__button {
+        font-size: 1.6rem; } }
+    @media (max-width: 768px) {
+      .accordion-custom__button {
+        flex-wrap: wrap; } }
+    .accordion-custom__button span {
+      margin-left: auto; }
+      @media (max-width: 768px) {
+        .accordion-custom__button span {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          margin-left: 0; } }
+  .accordion-custom__button::after {
+    transform: none !important;
+    margin-left: 1rem; }
+    @media (max-width: 992px) {
+      .accordion-custom__button::after {
+        margin-left: auto; } }
+  .accordion-custom__button:not(.collapsed)::after {
+    background-image: url(../img/minus.svg); }
+  .accordion-custom__button.collapsed::after {
+    background-image: url(../img/plus.svg); }
+  .accordion-custom__button:not(.collapsed) {
+    background-color: #008481;
+    color: #ffffff;
+    box-shadow: 0px 3px 6px #00000029; }
+  .accordion-custom__button:focus {
+    background-color: #008481;
+    color: #ffffff;
+    box-shadow: 0px 3px 6px #00000029; }
+  .accordion-custom__table {
+    padding: 5rem; }
+    .accordion-custom__table th {
+      font-size: 1.6rem; }
+
+.accordion-collapse {
+  transition: none; }
+
+@media (max-width: 992px) {
+  .accordion-collapse:not(.show) + tbody .hide-collapse {
+    display: none; } }
+
+.accordion-collapse.show + tbody .accordion-custom__total {
+  display: table-row; }
+
+.accordion {
+  padding: 0; }
 
 .breadcrumbs {
   font-size: 1.6rem;
@@ -387,6 +459,28 @@ body {
   display: flex;
   justify-content: center; }
 
+.pagination-cust__item {
+  border: none; }
+
+.pagination-cust__link {
+  color: #0f2c30;
+  font-size: 2rem;
+  padding: 1.7rem 2.4rem 1.6rem 2.4rem;
+  border: none; }
+  .pagination-cust__link:hover {
+    color: #0f2c30; }
+
+.pagination-cust .active {
+  background-color: #ffffff; }
+  .pagination-cust .active a {
+    background-color: #ffffff;
+    color: #0f2c30;
+    font-weight: 600;
+    border-bottom: 2px solid #0f2c30; }
+
+.pagination-cust .disabled {
+  display: none; }
+
 .product-compt {
   display: flex;
   align-items: center; }
@@ -503,6 +597,25 @@ body {
     font-weight: 600; }
     .search-product__retry-link span {
       margin-right: 1.4rem; }
+
+.table-custom__heading {
+  background-color: #d9e1e2; }
+  .table-custom__heading th {
+    padding: 1.5rem 3.2rem; }
+
+.table-custom__col {
+  font-size: 1.6rem;
+  font-weight: 500; }
+
+.table-custom__row td {
+  padding: 1.5rem 3.2rem;
+  font-size: 2rem;
+  font-weight: 400; }
+
+.table-custom__row th {
+  padding: 1.5rem 3.2rem;
+  font-size: 2rem;
+  font-weight: 400; }
 
 .footer {
   padding: 1.5rem 0;
@@ -752,7 +865,7 @@ body {
   .left-panel__group {
     display: flex;
     align-items: center; }
-  .left-panel__group:not(:last-child) {
+  .left-panel__group {
     margin-bottom: 2.3rem; }
 
 @media (min-width: 992px) {
@@ -838,6 +951,16 @@ body {
   @media (max-width: 768px) {
     .section-news {
       padding: 6rem 2rem; } }
+
+.section-order-history {
+  padding: 1rem 0 13.2rem 0; }
+  @media (max-width: 992px) {
+    .section-order-history {
+      padding: 1rem 2rem 13.2rem 2rem; } }
+  .section-order-history__filter {
+    display: flex;
+    margin-bottom: 5rem;
+    flex-wrap: wrap; }
 
 .section-our-shop {
   overflow: hidden; }
