@@ -14,9 +14,12 @@
 @import "components/card-product";
 @import "components/card-shops";
 @import "components/file-download";
+@import "components/modal";
 @import "components/product-component";
+@import "components/profile";
 @import "components/search-product";
 
+@import "layout/contact";
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
@@ -25,6 +28,7 @@
 
 @import "layout/service-desk";
 
+@import "pages/account";
 @import "pages/home";
 @import "pages/our-shop";
 @import "pages/product";

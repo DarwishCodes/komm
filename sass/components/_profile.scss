@@ -1,0 +1,26 @@
+.profile {
+  padding: 5rem;
+  background-color: $color-grey-2;
+
+  &__history {
+    font-size: 2.4rem;
+    text-decoration: underline;
+    color: $color-green-dark-2;
+  }
+
+  &__top {
+    @include addMediaQuery(laptop) {
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    @include addMediaQuery(laptop) {
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}

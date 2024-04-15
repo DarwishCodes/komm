@@ -22,8 +22,28 @@
   font-weight: 700;
   color: $color-green-dark-1;
 
+  i {
+    color: $color-primary;
+  }
+  &--icon {
+    display: inline-block;
+    i {
+      color: $color-green-dark-2;
+    }
+  }
+
+  &--icon:not(:last-child) {
+    padding: 0 0.5rem !important;
+  }
+  &--icon:last-child {
+    padding: 0 0 0 0.5rem !important;
+  }
+
   &__active {
     color: $color-primary;
+    i {
+      color: $color-primary;
+    }
   }
 }
 
@@ -40,25 +60,6 @@
     @include addMediaQuery(tablet) {
       height: 2.5rem;
     }
-  }
-}
-
-.nav-link {
-  i {
-    color: $color-primary;
-  }
-  &--icon {
-    display: inline-block;
-    i {
-      color: $color-green-dark-2;
-    }
-  }
-
-  &--icon:not(:last-child) {
-    padding: 0 0.5rem !important;
-  }
-  &--icon:last-child {
-    padding: 0 0 0 0.5rem !important;
   }
 }
 

@@ -1,0 +1,50 @@
+.modal-custom {
+  padding: 5rem;
+
+  &__input-label {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__input {
+    border: 2px solid $color-grey-5;
+    height: 5rem;
+    border-radius: 3px;
+    font-size: 1.6rem;
+
+    &--text-area {
+      height: auto;
+    }
+  }
+
+  &__input:focus {
+    border: 2px solid $color-grey-5;
+    box-shadow: 0 0 0 0.25rem rgba($color-green-dark-1, 0.25);
+  }
+
+  &__close {
+    font-size: 1.8rem;
+    margin-top: -5rem !important;
+
+    @include addMediaQuery(laptop) {
+      margin-top: 0 !important;
+    }
+  }
+
+  @include addMediaQuery(laptop) {
+    padding: 1rem;
+  }
+}
+
+.modal-dialog {
+  max-width: 132.4rem;
+}
+.modal-header {
+  border: none;
+}
+
+.modal-footer {
+  border: none;
+  display: flex;
+  justify-content: center;
+}
