@@ -4,9 +4,14 @@
   font-size: 1.6rem;
   padding: 1rem 2.3rem;
   font-weight: 500;
+  display: inline-block;
 
   &--size-medium {
     font-size: 2rem;
+  }
+
+  &--size-small {
+    font-size: 1.6rem;
   }
 }
 

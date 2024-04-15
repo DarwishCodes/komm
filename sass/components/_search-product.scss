@@ -1,6 +1,10 @@
 .search-product {
   padding: 4rem 0 4rem 4rem;
 
+  @include addMediaQuery(laptop) {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+
   &__icon {
     border: none;
     background-color: rgba(0, 0, 0, 0);
@@ -46,6 +50,7 @@
     display: flex;
     margin-top: 5rem;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__radio-input {
@@ -70,11 +75,18 @@
     display: flex;
     align-items: center;
     // margin-left: 2rem;
+    @include addMediaQuery(laptop) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__radio-wrap {
     display: flex;
     flex-wrap: wrap;
+
+    @include addMediaQuery(laptop) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__radio-label {

@@ -35,6 +35,16 @@
       );
     }
   }
+
+  &__left {
+    background-image: url(../img/shape-1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @include addMediaQuery(laptop) {
+      background-image: none;
+    }
+  }
   &__box {
     min-height: 74.2rem;
     display: flex;

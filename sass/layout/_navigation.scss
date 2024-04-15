@@ -21,6 +21,10 @@
   padding-left: 0 !important;
   font-weight: 700;
   color: $color-green-dark-1;
+
+  &__active {
+    color: $color-primary;
+  }
 }
 
 .nav-item {
@@ -45,6 +49,9 @@
   }
   &--icon {
     display: inline-block;
+    i {
+      color: $color-green-dark-2;
+    }
   }
 
   &--icon:not(:last-child) {
