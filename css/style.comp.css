@@ -381,7 +381,7 @@ body {
   .btn-primary:first-child:active .btn-primary:active {
     background-color: #f1c400 !important;
     color: #003a40 !important;
-    border: 2px solid #f1c400;
+    border: 2px solid #f1c400 !important;
     box-shadow: 0 0 0 0.25rem rgba(241, 196, 0, 0.25) !important; }
   .btn-primary .btn-check:checked + .btn,
   .btn-primary .btn.active,
@@ -389,14 +389,19 @@ body {
   .btn-primary .btn:first-child:active,
   .btn-primary :not(.btn-check) + .btn:active {
     background-color: #f1c400 !important;
-    color: #003a40;
+    color: #003a40 !important;
     box-shadow: 0 0 0 0.25rem rgba(241, 196, 0, 0.25) !important;
-    border: 2px solid #f1c400; }
+    border: 2px solid #f1c400 !important; }
   .btn-primary:focus-visible {
     background-color: #f1c400 !important;
     color: #003a40 !important;
     box-shadow: 0 0 0 0.25rem rgba(241, 196, 0, 0.25) !important;
-    border: 2px solid #f1c400; }
+    border: 2px solid #f1c400 !important; }
+  .btn-primary:active {
+    background-color: #f1c400 !important;
+    color: #003a40 !important;
+    box-shadow: 0 0 0 0.25rem rgba(241, 196, 0, 0.25) !important;
+    border: 2px solid #f1c400 !important; }
   .btn-primary--border {
     background-color: #ffffff;
     border: 2px solid #f1c400; }
