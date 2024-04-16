@@ -13,6 +13,10 @@
   &--size-small {
     font-size: 1.6rem;
   }
+
+  i {
+    margin: 0 0.5rem;
+  }
 }
 
 .btn-primary {
@@ -24,6 +28,7 @@
   &:first-child:active &:active {
     background-color: $color-orange-2 !important;
     color: $color-green-dark-1 !important;
+    border: 2px solid $color-orange-2;
     box-shadow: 0 0 0 0.25rem rgba($color-orange-2, 0.25) !important;
   }
 
@@ -35,12 +40,14 @@
     background-color: $color-orange-2 !important;
     color: $color-green-dark-1;
     box-shadow: 0 0 0 0.25rem rgba($color-orange-2, 0.25) !important;
+    border: 2px solid $color-orange-2;
   }
 
   &:focus-visible {
     background-color: $color-orange-2 !important;
     color: $color-green-dark-1 !important;
     box-shadow: 0 0 0 0.25rem rgba($color-orange-2, 0.25) !important;
+    border: 2px solid $color-orange-2;
   }
 
   &--border {

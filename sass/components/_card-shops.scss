@@ -30,6 +30,11 @@
       display: block;
       font-weight: 700;
       width: 24rem;
+      word-break: break-all;
+
+      @include addMediaQuery(laptop) {
+        width: auto;
+      }
     }
   }
 

@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/svg" href="" />
+
+    <title id="title">Komm.ONE</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav">
+        <div class="container">
+          <div class="row">
+            <div class="top-nav">
+              <ul class="top-nav__list">
+                <li class="top-nav__item">
+                  <a class="top-nav__link" href="#">
+                    <span class="top-nav__icon"
+                      ><i class="fa-light fa-book-open-reader"></i
+                    ></span>
+                    Leichte Sprache</a
+                  >
+                </li>
+                <li class="top-nav__item">
+                  <a class="top-nav__link" href="#">
+                    <span class="top-nav__icon"
+                      ><i class="fa-light fa-hands"></i></span
+                    >Gebardensprache</a
+                  >
+                </li>
+                <li class="top-nav__item">
+                  <a class="top-nav__link" href="#">
+                    <span class="top-nav__icon"
+                      ><i class="fa-regular fa-user"></i></span
+                    >Mitgliederportal</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"
+                  ><img src="img/logo.png" alt=""
+                /></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse justify-content-end"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >PRODUKTINFOS
+                        <i class="fa-regular fa-arrow-up-right"></i
+                      ></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link nav-link--icon nav-link__active"
+                        aria-current="page"
+                        href="#"
+                      >
+                        <i class="fa-regular fa-user"></i
+                      ></a>
+                      |
+                      <a
+                        class="nav-link nav-link--icon"
+                        aria-current="page"
+                        href="#"
+                        ><i class="fa-regular fa-cart-shopping"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero hero--full-backgd">
+        <div class="hero__left">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="hero__box hero__box--height-18">
+                  <div class="hero__text">
+                    <div class="heading--secondary">
+                      BESTELLUNG <span>AUFGEBEN</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="breadcrumbs">Startseite > Bestellung aufgeben</div>
+        </div>
+      </div>
+      <section class="section-multi-step">
+        <div class="container">
+          <div class="row">
+            <form class="multi-step" id="regForm" action="">
+              <!-- Circles which indicates the steps of the form: -->
+              <div class="multi-step__step-box">
+                <div class="multi-step__step">
+                  <span class="multi-step__step-number">1</span>
+                  <p class="multi-step__step-text">Allgemeines & Hinweise</p>
+                </div>
+                <div class="multi-step__step">
+                  <span class="multi-step__step-number">2</span>
+                  <p class="multi-step__step-text">1. Produkt</p>
+                </div>
+                <div class="multi-step__step">
+                  <span class="multi-step__step-number">3</span>
+                  <p class="multi-step__step-text">2. Produkt</p>
+                </div>
+                <div class="multi-step__step">
+                  <span class="multi-step__step-number">4</span>
+                  <p class="multi-step__step-text">Bestellübersicht</p>
+                </div>
+              </div>
+
+              <!-- One "multi-step__tab" for each step in the form: -->
+              <div class="multi-step__tab">
+                <div class="table-responsive">
+                  <table class="table table-custom">
+                    <thead class="table-custom__heading">
+                      <tr>
+                        <th class="table-custom__col" scope="col">
+                          Bestell-Nr.
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Position (-en)
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Kundenreferenz
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Bestelldatum
+                        </th>
+                        <th class="table-custom__col" scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">
+                        123456
+                      </th>
+                      <td>
+                        1. E-Payment - Basisangebot
+                        <br />
+                        2. E-Payment - Erweiterung <br />
+                        3. E-Payment - Lorem ipsum dolor sit amet
+                      </td>
+                      <td>
+                        123456 <br />123456 <br />
+                        123456
+                      </td>
+                      <td>08.07.2023</td>
+                      <td class="text-decoration-underline">
+                        Bestelldetails anzeigen
+                      </td>
+                    </tr>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">3</th>
+                      <td>Larry the Bird</td>
+                      <td>@twitter</td>
+                      <td>@twitter</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="warn-box">
+                  <div class="heading">
+                    <div class="u-margin-bottom-medium">
+                      <h4 class="heading--fourth">
+                        Mit Ihrer Bestellung erklären Sie sich mit unseren AGB's
+                        und Stornobedingungen einverstanden. Bitte lesen und
+                        bestätigen Sie unsere Hinweise:
+                      </h4>
+                    </div>
+                  </div>
+                  <div
+                    class="form-check custom-form__group u-margin-right-medium"
+                  >
+                    <input
+                      class="form-check-input custom-form__checkbox"
+                      type="checkbox"
+                      id="12"
+                    />
+                    <label
+                      class="form-check-label custom-form__checkbox-label"
+                      for="12"
+                    >
+                      Allgemeine Geschäftsbedingungen (AGB) *
+                    </label>
+                  </div>
+                  <div
+                    class="form-check custom-form__group u-margin-right-medium"
+                  >
+                    <input
+                      class="form-check-input custom-form__checkbox"
+                      type="checkbox"
+                      id="13"
+                    />
+                    <label
+                      class="form-check-label custom-form__checkbox-label"
+                      for="13"
+                    >
+                      Bildung & Soziales
+                    </label>
+                  </div>
+                </div>
+
+                <div class="u-margin-top-large">
+                  <div class="profile">
+                    <label
+                      for="formFile"
+                      class="form-label custom-form__input-label"
+                      >Vergeben Sie eine Referenz für Ihre internen Zwecke -
+                      optional (max. 50 Zeichen)</label
+                    >
+                    <input
+                      type="input"
+                      class="form-control custom-form__input"
+                    />
+                    <div
+                      class="u-margin-top-medium d-flex justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-primary u-margin-top-medium"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        Bearbeitungsanfrage
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="multi-step__tab">
+                <div class="table-responsive">
+                  <table class="table table-custom">
+                    <thead class="table-custom__heading">
+                      <tr>
+                        <th class="table-custom__col" scope="col">
+                          Bestell-Nr.
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Position (-en)
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Kundenreferenz
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Bestelldatum
+                        </th>
+                        <th class="table-custom__col" scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">
+                        123456
+                      </th>
+                      <td>
+                        1. E-Payment - Basisangebot
+                        <br />
+                        2. E-Payment - Erweiterung <br />
+                        3. E-Payment - Lorem ipsum dolor sit amet
+                      </td>
+                      <td>
+                        123456 <br />123456 <br />
+                        123456
+                      </td>
+                      <td>08.07.2023</td>
+                      <td class="text-decoration-underline">
+                        Bestelldetails anzeigen
+                      </td>
+                    </tr>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">3</th>
+                      <td>Larry the Bird</td>
+                      <td>@twitter</td>
+                      <td>@twitter</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="warn-box">
+                  <div class="heading">
+                    <div class="u-margin-bottom-medium">
+                      <h4 class="heading--fourth">
+                        Mit Ihrer Bestellung erklären Sie sich mit unseren AGB's
+                        und Stornobedingungen einverstanden. Bitte lesen und
+                        bestätigen Sie unsere Hinweise:
+                      </h4>
+                    </div>
+                  </div>
+                  <div
+                    class="form-check custom-form__group u-margin-right-medium"
+                  >
+                    <input
+                      class="form-check-input custom-form__checkbox"
+                      type="checkbox"
+                      id="12"
+                    />
+                    <label
+                      class="form-check-label custom-form__checkbox-label"
+                      for="12"
+                    >
+                      Allgemeine Geschäftsbedingungen (AGB) *
+                    </label>
+                  </div>
+                  <div
+                    class="form-check custom-form__group u-margin-right-medium"
+                  >
+                    <input
+                      class="form-check-input custom-form__checkbox"
+                      type="checkbox"
+                      id="13"
+                    />
+                    <label
+                      class="form-check-label custom-form__checkbox-label"
+                      for="13"
+                    >
+                      Bildung & Soziales
+                    </label>
+                  </div>
+                </div>
+
+                <div class="u-margin-top-large">
+                  <div class="profile">
+                    <label
+                      for="formFile"
+                      class="form-label custom-form__input-label"
+                      >Vergeben Sie eine Referenz für Ihre internen Zwecke -
+                      optional (max. 50 Zeichen)</label
+                    >
+                    <input
+                      type="input"
+                      class="form-control custom-form__input"
+                    />
+                    <div
+                      class="u-margin-top-medium d-flex justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-primary u-margin-top-medium"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        Bearbeitungsanfrage
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="multi-step__tab">
+                <div class="table-responsive">
+                  <table class="table table-custom">
+                    <thead class="table-custom__heading">
+                      <tr>
+                        <th class="table-custom__col" scope="col">
+                          Bestell-Nr.
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Position (-en)
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Kundenreferenz
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Bestelldatum
+                        </th>
+                        <th class="table-custom__col" scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">
+                        123456
+                      </th>
+                      <td>
+                        1. E-Payment - Basisangebot
+                        <br />
+                        2. E-Payment - Erweiterung <br />
+                        3. E-Payment - Lorem ipsum dolor sit amet
+                      </td>
+                      <td>
+                        123456 <br />123456 <br />
+                        123456
+                      </td>
+                      <td>08.07.2023</td>
+                      <td class="text-decoration-underline">
+                        Bestelldetails anzeigen
+                      </td>
+                    </tr>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">3</th>
+                      <td>Larry the Bird</td>
+                      <td>@twitter</td>
+                      <td>@twitter</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="warn-box">
+                  <div class="heading">
+                    <div class="u-margin-bottom-medium">
+                      <h4 class="heading--fourth">
+                        Mit Ihrer Bestellung erklären Sie sich mit unseren AGB's
+                        und Stornobedingungen einverstanden. Bitte lesen und
+                        bestätigen Sie unsere Hinweise:
+                      </h4>
+                    </div>
+                  </div>
+                  <div
+                    class="form-check custom-form__group u-margin-right-medium"
+                  >
+                    <input
+                      class="form-check-input custom-form__checkbox"
+                      type="checkbox"
+                      id="12"
+                    />
+                    <label
+                      class="form-check-label custom-form__checkbox-label"
+                      for="12"
+                    >
+                      Allgemeine Geschäftsbedingungen (AGB) *
+                    </label>
+                  </div>
+                  <div
+                    class="form-check custom-form__group u-margin-right-medium"
+                  >
+                    <input
+                      class="form-check-input custom-form__checkbox"
+                      type="checkbox"
+                      id="13"
+                    />
+                    <label
+                      class="form-check-label custom-form__checkbox-label"
+                      for="13"
+                    >
+                      Bildung & Soziales
+                    </label>
+                  </div>
+                </div>
+
+                <div class="u-margin-top-large">
+                  <div class="profile">
+                    <label
+                      for="formFile"
+                      class="form-label custom-form__input-label"
+                      >Vergeben Sie eine Referenz für Ihre internen Zwecke -
+                      optional (max. 50 Zeichen)</label
+                    >
+                    <input
+                      type="input"
+                      class="form-control custom-form__input"
+                    />
+                    <div
+                      class="u-margin-top-medium d-flex justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-primary u-margin-top-medium"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        Bearbeitungsanfrage
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="multi-step__tab">
+                <div class="table-responsive">
+                  <table class="table table-custom">
+                    <thead class="table-custom__heading">
+                      <tr>
+                        <th class="table-custom__col" scope="col">
+                          Bestell-Nr.
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Position (-en)
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Kundenreferenz
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Bestelldatum
+                        </th>
+                        <th class="table-custom__col" scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">
+                        123456
+                      </th>
+                      <td>
+                        1. E-Payment - Basisangebot
+                        <br />
+                        2. E-Payment - Erweiterung <br />
+                        3. E-Payment - Lorem ipsum dolor sit amet
+                      </td>
+                      <td>
+                        123456 <br />123456 <br />
+                        123456
+                      </td>
+                      <td>08.07.2023</td>
+                      <td class="text-decoration-underline">
+                        Bestelldetails anzeigen
+                      </td>
+                    </tr>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">3</th>
+                      <td>Larry the Bird</td>
+                      <td>@twitter</td>
+                      <td>@twitter</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="warn-box">
+                  <div class="heading">
+                    <div class="u-margin-bottom-medium">
+                      <h4 class="heading--fourth">
+                        Mit Ihrer Bestellung erklären Sie sich mit unseren AGB's
+                        und Stornobedingungen einverstanden. Bitte lesen und
+                        bestätigen Sie unsere Hinweise:
+                      </h4>
+                    </div>
+                  </div>
+                  <div
+                    class="form-check custom-form__group u-margin-right-medium"
+                  >
+                    <input
+                      class="form-check-input custom-form__checkbox"
+                      type="checkbox"
+                      id="12"
+                    />
+                    <label
+                      class="form-check-label custom-form__checkbox-label"
+                      for="12"
+                    >
+                      Allgemeine Geschäftsbedingungen (AGB) *
+                    </label>
+                  </div>
+                  <div
+                    class="form-check custom-form__group u-margin-right-medium"
+                  >
+                    <input
+                      class="form-check-input custom-form__checkbox"
+                      type="checkbox"
+                      id="13"
+                    />
+                    <label
+                      class="form-check-label custom-form__checkbox-label"
+                      for="13"
+                    >
+                      Bildung & Soziales
+                    </label>
+                  </div>
+                </div>
+
+                <div class="u-margin-top-large">
+                  <div class="profile">
+                    <label
+                      for="formFile"
+                      class="form-label custom-form__input-label"
+                      >Vergeben Sie eine Referenz für Ihre internen Zwecke -
+                      optional (max. 50 Zeichen)</label
+                    >
+                    <input
+                      type="input"
+                      class="form-control custom-form__input"
+                    />
+                    <div
+                      class="u-margin-top-medium d-flex justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-primary u-margin-top-medium"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        Bearbeitungsanfrage
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="multi-step__tab">
+                <div class="table-responsive">
+                  <table class="table table-custom">
+                    <thead class="table-custom__heading">
+                      <tr>
+                        <th class="table-custom__col" scope="col">
+                          Bestell-Nr.
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Position (-en)
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Kundenreferenz
+                        </th>
+                        <th class="table-custom__col" scope="col">
+                          Bestelldatum
+                        </th>
+                        <th class="table-custom__col" scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">
+                        123456
+                      </th>
+                      <td>
+                        1. E-Payment - Basisangebot
+                        <br />
+                        2. E-Payment - Erweiterung <br />
+                        3. E-Payment - Lorem ipsum dolor sit amet
+                      </td>
+                      <td>
+                        123456 <br />123456 <br />
+                        123456
+                      </td>
+                      <td>08.07.2023</td>
+                      <td class="text-decoration-underline">
+                        Bestelldetails anzeigen
+                      </td>
+                    </tr>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr class="table-custom__row">
+                      <th class="table-custom__row-heading" scope="row">3</th>
+                      <td>Larry the Bird</td>
+                      <td>@twitter</td>
+                      <td>@twitter</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="warn-box">
+                  <div class="heading">
+                    <div class="u-margin-bottom-medium">
+                      <h4 class="heading--fourth">
+                        Mit Ihrer Bestellung erklären Sie sich mit unseren AGB's
+                        und Stornobedingungen einverstanden. Bitte lesen und
+                        bestätigen Sie unsere Hinweise:
+                      </h4>
+                    </div>
+                  </div>
+                  <div
+                    class="form-check custom-form__group u-margin-right-medium"
+                  >
+                    <input
+                      class="form-check-input custom-form__checkbox"
+                      type="checkbox"
+                      id="12"
+                    />
+                    <label
+                      class="form-check-label custom-form__checkbox-label"
+                      for="12"
+                    >
+                      Allgemeine Geschäftsbedingungen (AGB) *
+                    </label>
+                  </div>
+                  <div
+                    class="form-check custom-form__group u-margin-right-medium"
+                  >
+                    <input
+                      class="form-check-input custom-form__checkbox"
+                      type="checkbox"
+                      id="13"
+                    />
+                    <label
+                      class="form-check-label custom-form__checkbox-label"
+                      for="13"
+                    >
+                      Bildung & Soziales
+                    </label>
+                  </div>
+                </div>
+
+                <div class="u-margin-top-large">
+                  <div class="profile">
+                    <label
+                      for="formFile"
+                      class="form-label custom-form__input-label"
+                      >Vergeben Sie eine Referenz für Ihre internen Zwecke -
+                      optional (max. 50 Zeichen)</label
+                    >
+                    <input
+                      type="input"
+                      class="form-control custom-form__input"
+                    />
+                    <div
+                      class="u-margin-top-medium d-flex justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-primary u-margin-top-medium"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        Bearbeitungsanfrage
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="overflow: auto">
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="btn btn-primary btn-primary--border u-margin-right-small"
+                    type="button"
+                    id="prevBtn"
+                    onclick="nextPrev(-1)"
+                  >
+                    <i class="fa-solid fa-chevron-left"></i>
+                    zurück
+                  </button>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    id="nextBtn"
+                    onclick="nextPrev(1)"
+                  >
+                    weiter
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-desk">
+        <div class="service-desk__left">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="service-desk__left">
+                  <div class="heading">
+                    <div
+                      class="u-width-80 u-margin-top-large u-margin-bottom-large"
+                    >
+                      <h2 class="heading--secondary">
+                        <span>KUNDEN</span> MANAGER / IN Ihr persönlicher
+                        <span>Ansprechpartner</span>
+                      </h2>
+                    </div>
+                    <div class="u-margin-bottom-medium">
+                      <h2 class="heading--fourth">Erika Musterfrau</h2>
+                    </div>
+                  </div>
+                  <div class="u-margin-bottom-large">
+                    <ul class="service-desk__list">
+                      <li class="service-desk__item">
+                        <a href="#" class="service-desk__link">
+                          <i class="fa-light fa-envelope"></i
+                          ><span class="text-decoration-none text-break"
+                            >Erika.Musterfrau@komm.one</span
+                          ></a
+                        >
+                      </li>
+                      <li class="service-desk__item">
+                        <a
+                          href="#"
+                          class="service-desk__link text-decoration-none"
+                        >
+                          <i class="fa-light fa-phone"></i
+                          ><span class="text-decoration-none"
+                            >+49 711 8108-00000</span
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6"></div>
+            </div>
+          </div>
+        </div>
+        <div class="service-desk__right"></div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="footer__left">
+                <div class="footer__logo">
+                  <img src="img/logo-2.png" alt="" />
+                </div>
+                <div class="footer__address">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid doloribus voluptates
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="footer__right">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Impressum</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Datenshutz</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Kontakt</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Barrierefreiheit</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal-custom">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">&nbsp;</h1>
+              <button
+                type="button"
+                class="btn-close modal-custom__close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="heading">
+                  <div class="u-margin-bottom-medium">
+                    <h3
+                      class="heading--tertiary heading--tertiary--font-weight-700"
+                    >
+                      Neue Daten
+                    </h3>
+                  </div>
+                </div>
+                <div class="heading">
+                  <div class="u-margin-bottom-large">
+                    <h4
+                      class="heading--fourth heading--fourth--font-weight-700"
+                    >
+                      Aktuelle Daten
+                    </h4>
+                  </div>
+                  <div class="u-margin-bottom-large">
+                    <p class="paragraph">Gemeinde Musterstadt</p>
+                  </div>
+                </div>
+                <div class="u-margin-bottom-medium">
+                  <div class="filter-box__radio justify-content-md-center">
+                    <div class="filter-box__radio-wrap">
+                      <div
+                        class="form-check filter-box__radio-group form-check-inline"
+                      >
+                        <input
+                          class="form-check-input filter-box__radio-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="inlineRadio2"
+                          value="option2"
+                        />
+                        <label
+                          class="form-check-label filter-box__radio-label"
+                          for="inlineRadio2"
+                          ><h4 class="heading--fourth">Max Mustermann</h4>
+                          <span class="u-margin-bottom-small d-block"
+                            >Kunden-ID: 123456 | Debitorennummer:
+                            123456789</span
+                          >
+                          <span
+                            >max.mustermann@musterstadt.de | + 49 176
+                            12345-67</span
+                          >
+                          <br />
+                          <span
+                            >Gemeinde Musterstadt, Musterdezernat 1.3 -
+                            Musterabteilung</span
+                          >
+                          <br />
+
+                          <span>Musterstraße 7, 12345 Musterstadt</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="heading">
+                  <div class="u-margin-bottom-large">
+                    <h4
+                      class="heading--fourth heading--fourth--font-weight-700"
+                    >
+                      Aktuelle Daten
+                    </h4>
+                  </div>
+                </div>
+                <div class="u-margin-bottom-medium">
+                  <div class="d-flex justify-content-center">
+                    <div
+                      class="search-product search-product--no-padding"
+                      style="width: 100%"
+                    >
+                      <div class="input-group mb-3">
+                        <span
+                          class="input-group-text search-product__icon"
+                          id="basic-addon1"
+                          ><i class="fa-regular fa-magnifying-glass"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control search-product__input"
+                          placeholder="Bestellnummer / Produktbezeichnung / Kundenreferenz"
+                          aria-label="Bestellnummer / Produktbezeichnung / Kundenreferenz"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-box__radio justify-content-md-center">
+                  <div class="filter-box__radio-wrap">
+                    <div class="form-check filter-box__radio-group">
+                      <input
+                        class="form-check-input filter-box__radio-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio2"
+                        value="option2"
+                      />
+                      <label
+                        class="form-check-label filter-box__radio-label"
+                        for="inlineRadio2"
+                        ><h4 class="heading--fourth">
+                          Max Mustermann
+                          <small
+                            >Kunden-ID: 123456 | Debitorennummer:
+                            123456789</small
+                          >
+                        </h4>
+                        <span class="u-margin-bottom-small d-block"></span>
+                        <span
+                          >max.mustermann@musterstadt.de | + 49 176
+                          12345-67</span
+                        >
+                        <br />
+                        <span
+                          >Gemeinde Musterstadt, Musterdezernat 1.3 -
+                          Musterabteilung</span
+                        >
+                        <br />
+
+                        <span>Musterstraße 7, 12345 Musterstadt</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-line u-margin-bottom-medium"></div>
+                <div class="filter-box__radio justify-content-md-center">
+                  <div class="filter-box__radio-wrap">
+                    <div class="form-check filter-box__radio-group">
+                      <input
+                        class="form-check-input filter-box__radio-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio2"
+                        value="option2"
+                      />
+                      <label
+                        class="form-check-label filter-box__radio-label"
+                        for="inlineRadio2"
+                        ><h4 class="heading--fourth">
+                          Max Mustermann
+                          <small
+                            >Kunden-ID: 123456 | Debitorennummer:
+                            123456789</small
+                          >
+                        </h4>
+                        <span class="u-margin-bottom-small d-block"></span>
+                        <span
+                          >max.mustermann@musterstadt.de | + 49 176
+                          12345-67</span
+                        >
+                        <br />
+                        <span
+                          >Gemeinde Musterstadt, Musterdezernat 1.3 -
+                          Musterabteilung</span
+                        >
+                        <br />
+
+                        <span>Musterstraße 7, 12345 Musterstadt</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-line u-margin-bottom-medium"></div>
+                <div class="filter-box__radio justify-content-md-center">
+                  <div class="filter-box__radio-wrap">
+                    <div class="form-check filter-box__radio-group">
+                      <input
+                        class="form-check-input filter-box__radio-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio2"
+                        value="option2"
+                      />
+                      <label
+                        class="form-check-label filter-box__radio-label"
+                        for="inlineRadio2"
+                        ><h4 class="heading--fourth">
+                          Max Mustermann
+                          <small
+                            >Kunden-ID: 123456 | Debitorennummer:
+                            123456789</small
+                          >
+                        </h4>
+                        <span class="u-margin-bottom-small d-block"></span>
+                        <span
+                          >max.mustermann@musterstadt.de | + 49 176
+                          12345-67</span
+                        >
+                        <br />
+                        <span
+                          >Gemeinde Musterstadt, Musterdezernat 1.3 -
+                          Musterabteilung</span
+                        >
+                        <br />
+
+                        <span>Musterstraße 7, 12345 Musterstadt</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-line u-margin-bottom-medium"></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">
+                Änderungen einreichen
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/multi-step.js"></script>
+  </body>
+</html>

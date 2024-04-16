@@ -1,0 +1,99 @@
+.multi-step {
+  padding: 0 0 14.2rem 0;
+
+  @include addMediaQuery(laptop) {
+    padding: 0 2rem 14.2rem 2rem;
+  }
+  &__tab {
+    display: none;
+  }
+
+  &__input {
+    .invalid {
+      background-color: #ffdddd;
+    }
+  }
+
+  &__tab {
+    margin-bottom: 5rem;
+  }
+
+  &__step-box {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 7rem auto;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 31%;
+      left: 12%;
+      width: 79%;
+      height: 1px;
+      z-index: -1;
+      background-color: $color-primary;
+
+      @include addMediaQuery(tablet) {
+        top: 22%;
+        left: 10%;
+        width: 84%;
+      }
+    }
+
+    @include addMediaQuery(desktop) {
+      width: 100%;
+    }
+  }
+
+  &__step-number {
+    width: 5.4rem;
+    height: 5.4rem;
+    border-radius: 50%;
+    font-size: 2.8rem;
+    border: 2px solid $color-primary;
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-primary;
+
+    @include addMediaQuery(tablet) {
+      width: 2.4rem;
+      height: 2.4rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  &__step-text {
+    color: $color-grey-3;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+
+    @include addMediaQuery(tablet) {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .active &__step-number {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+  .active &__step-text {
+    color: $color-green-dark-2;
+  }
+
+  .finish &__step-number {
+    background-color: $color-green-5;
+    color: $color-primary;
+  }
+}

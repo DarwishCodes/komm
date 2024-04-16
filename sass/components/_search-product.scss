@@ -1,6 +1,9 @@
 .search-product {
   padding: 4rem 0 4rem 4rem;
 
+  &--no-padding {
+    padding: 0;
+  }
   @include addMediaQuery(laptop) {
     padding: 4rem 2rem 4rem 2rem;
   }
