@@ -134,6 +134,9 @@ body {
 .u-padding-4 {
   padding: 4rem; }
 
+.u-height-100 {
+  height: 100%; }
+
 .u-padding-5 {
   padding: 5rem; }
 
@@ -142,6 +145,12 @@ body {
   @media (max-width: 992px) {
     .u-width-70 {
       width: 100%; } }
+
+.u-width-100 {
+  width: 100%; }
+  @media (max-width: 992px) {
+    .u-width-100 {
+      width: 50%; } }
 
 .accordion-custom {
   border: none;
@@ -242,16 +251,43 @@ body {
         align-items: center; } }
     .accordion-offer__button span {
       margin-left: auto;
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      font-weight: 700; }
       @media (max-width: 768px) {
         .accordion-offer__button span {
           margin-top: 1rem;
           margin-bottom: 1rem;
           margin-left: 0; } }
     .accordion-offer__button strong {
-      margin-right: 1rem; }
+      position: relative;
+      margin-right: 2rem; }
+      .accordion-offer__button strong span {
+        color: #008481;
+        font-size: inherit; }
+  .accordion-offer__notification-icon {
+    position: absolute;
+    top: -1.8rem;
+    right: -1.8rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background-color: #f1c400;
+    /* Circle color */
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .accordion-offer__notification-number {
+    color: #0f2c30 !important;
+    /* Text color */
+    font-size: 1.3rem !important;
+    font-weight: bold;
+    margin: 0 !important; }
   .accordion-offer__button::after {
-    transform: none !important; }
+    transform: none !important;
+    margin-left: 1rem; }
+    @media (max-width: 768px) {
+      .accordion-offer__button::after {
+        margin-left: auto; } }
   .accordion-offer__button:not(.collapsed)::after {
     background-image: url(../img/minus-black.svg); }
   .accordion-offer__button.collapsed::after {
@@ -1201,6 +1237,14 @@ body {
       .section-account__top {
         justify-content: center;
         flex-direction: column; } }
+
+.section-cart-empty {
+  padding: 12rem 0; }
+  @media (max-width: 992px) {
+    .section-cart-empty {
+      padding: 6rem 2rem; } }
+  .section-cart-empty__image-box {
+    margin-right: 5rem; }
 
 .section-products {
   padding: 10rem 0 8rem 0; }
