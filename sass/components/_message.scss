@@ -1,0 +1,13 @@
+.message {
+  padding: 1.2rem 2rem;
+  &--success {
+    background-color: $color-green-4;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $color-primary;
+  }
+}

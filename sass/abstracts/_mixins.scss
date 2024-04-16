@@ -57,17 +57,17 @@
   @if $breakpoint == laptop {
     @media (max-width: 992px) {
       @content;
-    } //  1024px
+    } //  992px
   }
 
   @if $breakpoint == laptop-l {
-    @media (max-width: 90em) {
+    @media (max-width: 1200px) {
       @content;
     } //  1440px
   }
 
   @if $breakpoint == desktop {
-    @media (max-width: 160em) {
+    @media (max-width: 1400px) {
       @content;
     } //  2560px
   }

@@ -142,20 +142,47 @@
           <div class="row">
             <div class="heading">
               <div
-                class="u-margin-bottom-medium u-margin-top-large section-account__top"
+                class="u-margin-bottom-small u-margin-top-large section-account__top"
               >
                 <h3
-                  class="heading--tertiary heading--tertiary--font-weight-700"
+                  class="heading--fourth heading--fourth--font-weight-700"
                 >
-                  Hallo, Herr Max Mustermann!
+                Bestelldetails
                 </h3>
-                <a class="btn btn-primary u-margin-top-medium" href="#"
-                  >Abmelden</a
+                <a class="btn btn-primary u-margin-top-small" href="#"
+                  >Bestellung stornieren</a
                 >
               </div>
             </div>
             <div class="section-account__line u-margin-bottom-large"></div>
           </div>
+          <div class="row">
+            <div class="col-lg-2"><p class="paragraph">Bestellnummer</p></div>
+            <div class="col-lg-10"><p class="paragraph">#123456</p></div>
+
+          </div>
+          <div class="row">
+            <div class="col-lg-2"><p class="paragraph">Bestelldatum</p></div>
+            <div class="col-lg-10"><p class="paragraph">10.10.2023</p></div>
+
+          </div>
+          <div class="u-margin-bottom-large">
+            <div class="row">
+              <div class="col-lg-2"><p class="paragraph">Bestellbestätigung</p></div>
+              <div class="col-lg-10">            <a href="#" class="file-download">
+                <span class="file-download__icon-box">
+                  <span class="file-download__icon"
+                    ><i class="fa-light fa-file-pdf"></i
+                  ></span>
+                </span>
+                <p class="file-download__text text-break">
+                  Bestellbestätigung_123456.pdf
+                </p>
+              </a></div>
+  
+            </div>
+          </div>
+
           <div class="row">
             <div class="heading">
               <div class="u-margin-bottom-medium">
@@ -193,6 +220,27 @@
             </div>
           </div>
           <div class="row">
+            <div class="u-margin-bottom-large u-margin-top-large">
+              <div class="total-cost">
+                <div class="total-cost__heading">
+                  <div class="total-cost__heading-box total-cost__heading-box--1"><h4 class="heading--fourth heading--fourth--font-weight-700">Positionen</h4><span>der Bestellung</span></div>
+                  <div class="total-cost__heading-box total-cost__heading-box--2"><h4 class="heading--fourth heading--fourth--font-weight-700">Summe lfd. Kosten</h4><span>in € / Jahr</span></div>
+                  <div class="total-cost__heading-box total-cost__heading-box--3"><h4 class="heading--fourth heading--fourth--font-weight-700">Summe einm. Kosten</h4><span>in €</span></div>
+                </div>
+                <div class="total-cost__row">
+                  <div class="total-cost__row-box total-cost__row-box--1">                <h4 class="heading--fourth heading--fourth--font-weight-700">2</h4>
+                  </div>
+                  <div class="total-cost__row-box total-cost__row-box--2">                <h4 class="heading--fourth heading--fourth--font-weight-700">3.192,00</h4> 
+                  </div>
+                  <div class="total-cost__row-box total-cost__row-box--3">                <h4 class="heading--fourth heading--fourth--font-weight-700">1.158‬,00</h4>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item accordion-custom">
                 <h2
@@ -207,7 +255,7 @@
                     aria-expanded="false"
                     aria-controls="collapseOne"
                   >
-                    E-Payment - Basisangebot
+                    <strong>E-Payment - Basisangebot</strong>
 
                   <span>Details ausblenden</span>
 
@@ -320,6 +368,49 @@ Basis.E-Payment Customizing
                     </tbody>
                   </table>
                 </div>
+                <div                         id="collapse3"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+              <div class="table-responsive accordion-custom__table">
+                <table class="table table-custom">
+                  <thead class="table-custom__heading">
+
+                      <th class="table-custom__col" scope="col">Weitere Angaben</th>
+                      <th class="table-custom__col" scope="col">
+                        Details
+                      </th>
+
+
+                  </thead>
+                  <tbody>
+                      <tr class="table-custom__row">
+                        <th class="table-custom__row-heading" scope="row">
+                          Eingesetztes Finanzverfahren                          </th>
+                        <td>
+                          KM-Finanzen SAP BC Smart
+                        </td>
+                      </tr>
+                      <tr class="table-custom__row">
+                        <th class="table-custom__row-heading" scope="row">
+                          Eingesetztes Finanzverfahren                          </th>
+                        <td>
+                          KM-Finanzen SAP BC Smart
+                        </td>
+                      </tr>
+                      <tr class="table-custom__row">
+                        <th class="table-custom__row-heading" scope="row">
+                          Eingesetztes Finanzverfahren                          </th>
+                        <td>
+                          KM-Finanzen SAP BC Smart
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+              </div>
+            </div>
+
               </div>
             </div>
           </div>

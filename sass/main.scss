@@ -15,12 +15,15 @@
 @import "components/card-product";
 @import "components/card-shops";
 @import "components/file-download";
+@import "components/filter-box";
+@import "components/message";
 @import "components/modal";
 @import "components/pagination";
 @import "components/product-component";
 @import "components/profile";
 @import "components/search-product";
 @import "components/table";
+@import "components/total-cost";
 
 @import "layout/contact";
 @import "layout/footer";
@@ -35,4 +38,5 @@
 @import "pages/home";
 @import "pages/order-history";
 @import "pages/our-shop";
+@import "pages/product-config";
 @import "pages/product";

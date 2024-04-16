@@ -1,0 +1,78 @@
+.total-cost {
+  display: flex;
+  flex-direction: column;
+
+  @include addMediaQuery(tablet) {
+    font-size: 1.6rem;
+  }
+
+  &__heading-box {
+    margin: 0 1rem;
+    span {
+      font-size: 1.5rem;
+      @include addMediaQuery(tablet) {
+        font-size: 1rem;
+      }
+    }
+
+    h4 {
+      @include addMediaQuery(tablet) {
+        font-size: 1rem;
+      }
+    }
+    &--1 {
+      width: 50%;
+
+      @include addMediaQuery(laptop) {
+        width: 33.2%;
+      }
+
+      span {
+        margin-left: 1rem;
+      }
+    }
+
+    &--20 {
+      width: 20%;
+    }
+
+    &--2 {
+      text-align: right;
+    }
+
+    &--3 {
+      text-align: right;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-grey-4;
+    padding: 1rem 0;
+    margin: 1rem 0;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__row-box {
+    h4 {
+      @include addMediaQuery(tablet) {
+        font-size: 1.1rem;
+      }
+    }
+    &--1 {
+      width: 44.2%;
+      margin-left: 5rem;
+      @include addMediaQuery(laptop) {
+        width: 21.1%;
+      }
+    }
+
+    &--11 {
+      width: 11.2%;
+    }
+  }
+}

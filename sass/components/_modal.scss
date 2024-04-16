@@ -1,6 +1,5 @@
 .modal-custom {
   padding: 5rem;
-
   &__input-label {
     font-size: 2rem;
     font-weight: 600;
@@ -15,6 +14,16 @@
     &--text-area {
       height: auto;
     }
+
+    &--required {
+      border: 1px solid $color-red-1;
+    }
+  }
+
+  &__required {
+    color: $color-red-1;
+    font-size: 1.6rem;
+    margin-top: 2rem;
   }
 
   &__input:focus {
@@ -38,6 +47,10 @@
 
 .modal-dialog {
   max-width: 132.4rem;
+
+  &__width-100 {
+    max-width: 100rem;
+  }
 }
 .modal-header {
   border: none;

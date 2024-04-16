@@ -10,6 +10,7 @@
     @include addMediaQuery(laptop) {
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -25,21 +26,27 @@
     }
     @include addMediaQuery(tablet) {
       flex-wrap: wrap;
+      align-items: center;
     }
     span {
       margin-left: auto;
+      font-size: 1.8rem;
       @include addMediaQuery(tablet) {
         margin-top: 1rem;
         margin-bottom: 1rem;
         margin-left: 0;
       }
     }
+
+    strong {
+      margin-right: 1rem;
+    }
   }
 
   &__button::after {
     transform: none !important;
     margin-left: 1rem;
-    @include addMediaQuery(laptop) {
+    @include addMediaQuery(tablet) {
       margin-left: auto;
     }
   }
@@ -65,6 +72,10 @@
   &__table {
     padding: 5rem;
 
+    @include addMediaQuery(tablet) {
+      padding: 2rem;
+    }
+
     th {
       font-size: 1.6rem;
     }
@@ -86,4 +97,70 @@
 
 .accordion {
   padding: 0;
+}
+
+.accordion-offer {
+  border: none;
+  background-color: rgba($color-primary, 0);
+  padding: 0;
+  &__header {
+    font-size: 2.4rem;
+  }
+
+  &__content {
+    padding: 3rem 1.5rem;
+  }
+  &__button {
+    background-color: rgba($color-primary, 0);
+    color: $color-green-dark-2;
+    box-shadow: none;
+    border-radius: 0 !important;
+    font-size: 2.4rem;
+    padding: 2rem 1.5rem;
+    border-bottom: 1px solid $color-black-1;
+    @include addMediaQuery(laptop) {
+      font-size: 1.6rem;
+    }
+    @include addMediaQuery(tablet) {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    span {
+      margin-left: auto;
+      font-size: 1.8rem;
+      @include addMediaQuery(tablet) {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+      }
+    }
+
+    strong {
+      margin-right: 1rem;
+    }
+  }
+
+  &__button::after {
+    transform: none !important;
+  }
+  &__button:not(.collapsed)::after {
+    background-image: url(../img/minus-black.svg);
+  }
+
+  &__button.collapsed::after {
+    background-image: url(../img/plus-black.svg);
+  }
+
+  &__button:not(.collapsed) {
+    background-color: rgba($color-primary, 0);
+    color: $color-green-dark-2;
+    box-shadow: none;
+    border-bottom: 1px solid $color-black-1;
+  }
+  &__button:focus {
+    background-color: rgba($color-primary, 0);
+    color: $color-green-dark-2;
+    box-shadow: none;
+    border-bottom: 1px solid $color-black-1;
+  }
 }
