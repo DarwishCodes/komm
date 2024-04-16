@@ -167,6 +167,67 @@
     margin: 0 !important;
   }
 
+  &__tools {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $color-orange-2;
+    padding: 0.8rem 5rem 0.3rem 5rem;
+    box-shadow: 0px 3px 6px $color-gray-7;
+
+    @include addMediaQuery(laptop) {
+      justify-content: center;
+      width: 100%;
+      padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+
+    @include addMediaQuery(laptop) {
+      width: 100%;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 5rem;
+
+    @include addMediaQuery(laptop) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    @include addMediaQuery(laptop) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      width: 100%;
+    }
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: $color-green-dark-2;
+    span {
+      margin-right: 1rem;
+
+      @include addMediaQuery(laptop) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      color: $color-black-1;
+    }
+
+    i {
+    }
+  }
   &__button::after {
     transform: none !important;
     margin-left: 1rem;

@@ -282,6 +282,48 @@ body {
     font-size: 1.3rem !important;
     font-weight: bold;
     margin: 0 !important; }
+  .accordion-offer__tools {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f1c400;
+    padding: 0.8rem 5rem 0.3rem 5rem;
+    box-shadow: 0px 3px 6px #00000029; }
+    @media (max-width: 992px) {
+      .accordion-offer__tools {
+        justify-content: center;
+        width: 100%;
+        padding: 0.8rem 0.8rem 0.8rem 0.8rem; } }
+  .accordion-offer__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0; }
+    @media (max-width: 992px) {
+      .accordion-offer__list {
+        width: 100%; } }
+  .accordion-offer__item:not(:last-child) {
+    margin-right: 5rem; }
+    @media (max-width: 992px) {
+      .accordion-offer__item:not(:last-child) {
+        margin-left: 1rem;
+        margin-right: 1rem; } }
+  .accordion-offer__item {
+    text-align: center; }
+    @media (max-width: 992px) {
+      .accordion-offer__item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 100%; } }
+  .accordion-offer__link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #0f2c30; }
+    .accordion-offer__link span {
+      margin-right: 1rem; }
+      @media (max-width: 992px) {
+        .accordion-offer__link span {
+          display: none; } }
+    .accordion-offer__link:hover {
+      color: #000000; }
   .accordion-offer__button::after {
     transform: none !important;
     margin-left: 1rem; }

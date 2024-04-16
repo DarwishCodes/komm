@@ -161,91 +161,15 @@
                 <div class="text-end">                <button class="btn btn-primary">Prüfen & Bestellen</button>
                 </div>
               </div>
-          <div class="row">
-            <div class="heading">
-              <div
-                class="u-margin-bottom-small u-margin-top-large section-account__top"
-              >
-                <h3
-                  class="heading--fourth heading--fourth--font-weight-700"
-                >
-                Bestelldetails
-                </h3>
-                <a class="btn btn-primary u-margin-top-small" href="#"
-                  >Bestellung stornieren</a
-                >
-              </div>
-            </div>
-            <div class="section-account__line u-margin-bottom-large"></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-2"><p class="paragraph">Bestellnummer</p></div>
-            <div class="col-lg-10"><p class="paragraph">#123456</p></div>
-
-          </div>
-          <div class="row">
-            <div class="col-lg-2"><p class="paragraph">Bestelldatum</p></div>
-            <div class="col-lg-10"><p class="paragraph">10.10.2023</p></div>
-
-          </div>
-          <div class="u-margin-bottom-large">
-            <div class="row">
-              <div class="col-lg-2"><p class="paragraph">Bestellbestätigung</p></div>
-              <div class="col-lg-10">            <a href="#" class="file-download">
-                <span class="file-download__icon-box">
-                  <span class="file-download__icon"
-                    ><i class="fa-light fa-file-pdf"></i
-                  ></span>
-                </span>
-                <p class="file-download__text text-break">
-                  Bestellbestätigung_123456.pdf
-                </p>
-              </a></div>
-  
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="heading">
-              <div class="u-margin-bottom-medium">
-                <h3 class="heading--fourth heading--fourth--font-weight-700">
-                  Profil
-                </h3>
-              </div>
-            </div>
-            <div class="profile">
-              <div class="d-flex profile__top">
-                <p class="paragraph u-margin-right-large">Kunden-ID: 123456</p>
-                <p class="paragraph">Debitorennummer: 123456789</p>
-              </div>
-              <div class="section-account__line u-margin-bottom-large"></div>
-              <div class="heading">
-                <div class="u-margin-bottom-medium">
-                  <h3 class="heading--fourth heading--fourth--font-weight-700">
-                    Max Mustermann
-                  </h3>
-                </div>
-              </div>
-              <p class="paragraph">Gemeinde Musterstadt</p>
-              <p class="paragraph">Musterstraße 7, 12345 Musterstadt</p>
-              <div class="profile__bottom">
-                <p class="paragraph">max.mustermann@musterstadt.de</p>
-                <button
-                  type="button"
-                  class="btn btn-primary u-margin-top-medium"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Bearbeitungsanfrage
-                </button>
-              </div>
-            </div>
-          </div>
-          
 
           <div class="row">
             <div class="u-margin-bottom-large u-margin-top-large">
-                <div class="accordion" id="accordionExampleParent-1">
+                <!-- 
+
+                    PARENT ACCORDION
+
+                 -->
+                <div class="accordion" id="accordionParent-1">
                     <div class="accordion-item accordion-offer">
                       <h2
                         class="accordion-header accordion-offer__header"
@@ -264,14 +188,20 @@
                           </div> </strong>
                           <span>Details ausblenden</span>
                         </button>
+
                         <div
                           id="collapse2"
                           class="accordion-collapse accordion-collaps-parent-1 collapse"
                           aria-labelledby="headingOne"
-                          data-bs-parent="#accordionExampleParent-1"
+                          data-bs-parent="#accordionParent-1"
                         >
+                        <!--
+
+                            CHILD ACCORDION
+
+                        -->
                           <div class="accordion-offer__content">
-                            <div class="accordion" id="accordionExample">
+                            <div class="accordion" id="accordionChild-1">
                                 <div class="accordion-item accordion-custom">
                                   <h2
                                     class="accordion-header accordion-custom__header"
@@ -281,7 +211,7 @@
                                       class="accordion-button accordion-custom__button collapsed"
                                       type="button"
                                       data-bs-toggle="collapse"
-                                      data-bs-target=".accordion-collapse-2"
+                                      data-bs-target=".accordion-collapse-child-1"
                                       aria-expanded="false"
                                       aria-controls="collapseOne"
                                     >
@@ -291,15 +221,26 @@
                   
                                     </button>
                                   </h2>
-                    
+                                            
+                                  <div class="accordion-offer__tools">
+                                    <ul class="accordion-offer__list">
+                                        <li class="accordion-offer__item"><a class="accordion-offer__link" href="#"> <span>Auf die Merkliste</span><i class="fa-light fa-star"></i></a></li>
+                                        <li class="accordion-offer__item"><a class="accordion-offer__link" href="#"> <span>Auf die Merkliste</span><i class="fa-light fa-print"></i></a></li>
+        
+                                        <li class="accordion-offer__item"><a class="accordion-offer__link" href="#"> <span>Auf die Merkliste</span><i class="fa-light fa-trash"></i></a></li>
+        
+                                        <li class="accordion-offer__item"><a class="accordion-offer__link" href="#"> <span>Auf die Merkliste</span><i class="fa-light fa-pen"></i></a></li>
+        
+                                    </ul>
+                                </div>
                                   <div class="table-responsive accordion-custom__table">
                                     <table class="table table-custom">
                                       <thead class="table-custom__heading">
                                         <tr
                                           id="collapse2"
-                                          class="accordion-collapse accordion-collapse-2 collapse"
+                                          class="accordion-collapse accordion-collapse-child-1 collapse"
                                           aria-labelledby="headingOne"
-                                          data-bs-parent="#accordionExample"
+                                          data-bs-parent="#accordionChild-1"
                                         >
                                           <th class="table-custom__col" scope="col">Leistungs-Nr.</th>
                                           <th class="table-custom__col" scope="col">
@@ -320,10 +261,10 @@
                                       </thead>
                                       <tbody>
                                         <tbody
-                                          id="collapse3"
-                                          class="accordion-collapse accordion-collapse-2 collapse"
+                                          id="collapse2"
+                                          class="accordion-collapse accordion-collapse-child-1 collapse"
                                           aria-labelledby="headingOne"
-                                          data-bs-parent="#accordionExample"
+                                          data-bs-parent="#accordionChild-1"
                                         >
                                           <tr class="table-custom__row">
                                             <th class="table-custom__row-heading" scope="row">
@@ -398,10 +339,10 @@
                                       </tbody>
                                     </table>
                                   </div>
-                                  <div                         id="collapse3"
-                                  class="accordion-collapse collapse"
+                                  <div                         id="collapse2"
+                                  class="accordion-collapse collapse accordion-collapse-child-1"
                                   aria-labelledby="headingOne"
-                                  data-bs-parent="#accordionExample"
+                                  data-bs-parent="#accordionChild-1"
                                 >
                                 <div class="table-responsive accordion-custom__table">
                                   <table class="table table-custom">
@@ -450,177 +391,233 @@
                   </div>
 
             </div>
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item accordion-custom">
-                <h2
-                  class="accordion-header accordion-custom__header"
-                  id="headingOne"
-                >
-                  <button
-                    class="accordion-button accordion-custom__button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target=".accordion-collapse-1"
-                    aria-expanded="false"
-                    aria-controls="collapseOne"
-                  >
-                    <strong>E-Payment - Basisangebot</strong>
+            <div class="u-margin-bottom-large u-margin-top-large">
+                <!-- 
 
-                  <span>Details ausblenden</span>
+                    PARENT ACCORDION
 
-                  </button>
-                </h2>
-  
-                <div class="table-responsive accordion-custom__table">
-                  <table class="table table-custom">
-                    <thead class="table-custom__heading">
-                      <tr
-                        id="collapse2"
-                        class="accordion-collapse accordion-collapse-1 collapse"
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample"
+                 -->
+                <div class="accordion" id="accordionParent-2">
+                    <div class="accordion-item accordion-offer">
+                      <h2
+                        class="accordion-header accordion-offer__header"
+                        id="headingOne"
                       >
-                        <th class="table-custom__col" scope="col">Leistungs-Nr.</th>
-                        <th class="table-custom__col" scope="col">
-                          Bezeichnung
-                        </th>
-                        <th class="table-custom__col" scope="col">
-                          Menge
-                        </th>
-                        <th class="table-custom__col" scope="col">
-                          Einheit
-                        </th>
-                        <th class="table-custom__col" scope="col">Einzelentgelt</th>
-                        <th class="table-custom__col" scope="col">∑ lfd. Kosten</th>
-  
-                        <th class="table-custom__col" scope="col">∑ einm. Kosten</th>
-  
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tbody
-                        id="collapse3"
-                        class="accordion-collapse accordion-collapse-1 collapse"
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <tr class="table-custom__row">
-                          <th class="table-custom__row-heading" scope="row">
-                            123456                          </th>
-                          <td>
-Basis.E-Payment Customizing
-                          </td>
-                          <td>1</td>
-                          <td class="text-decoration-underline">
-                            PAUSCH
-                          </td>
-                          <td>366,00</td>
-                          <td>-</td>
-                          <td>366,00</td>
-                        </tr>
-                        <tr class="table-custom__row">
-                          <th class="table-custom__row-heading" scope="row">
-                            123456                          </th>
-                          <td>
-Basis.E-Payment Customizing
-                          </td>
-                          <td>1</td>
-                          <td class="text-decoration-underline">
-                            PAUSCH
-                          </td>
-                          <td>366,00</td>
-                          <td>-</td>
-                          <td>366,00</td>
-                        </tr>
-                        <tr class="table-custom__row">
-                          <th class="table-custom__row-heading" scope="row">
-                            123456                          </th>
-                          <td>
-Basis.E-Payment Customizing
-                          </td>
-                          <td>1</td>
-                          <td class="text-decoration-underline">
-                            PAUSCH
-                          </td>
-                          <td>366,00</td>
-                          <td>-</td>
-                          <td>366,00</td>
-                        </tr>
-                        <tr class="table-custom__row">
-                          <th class="table-custom__row-heading" scope="row">
-                            123456                          </th>
-                          <td>
-Basis.E-Payment Customizing
-                          </td>
-                          <td>1</td>
-                          <td class="text-decoration-underline">
-                            PAUSCH
-                          </td>
-                          <td>366,00</td>
-                          <td>-</td>
-                          <td>366,00</td>
-                        </tr>
-                      </tbody>
-                      <tr class="table-custom__row accordion-custom__total">
-                        <th class="table-custom__row-heading hide-collapse" scope="row">
-                                                    </th>
-                        <td class="hide-collapse">
-                        </td>
-                        <td class="hide-collapse"></td>
-                        <td class="text-decoration-underline hide-collapse">
+                       <button
+                          class="accordion-button accordion-offer__button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
                           
-                        </td>
-                        <td class=" fw-bold">Summe(n)</td>
-                        <td class=" fw-bold">1.596,00</td>
-                        <td class=" fw-bold">446,00</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div                         id="collapse3"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample"
-              >
-              <div class="table-responsive accordion-custom__table">
-                <table class="table table-custom">
-                  <thead class="table-custom__heading">
+                          data-bs-target=".accordion-collaps-parent-2"
+                          aria-expanded="false"
+                          aria-controls="collapseOne"
+                        >
+                          <strong>Übersicht - <span>Warenkorb</span> <div class="accordion-offer__notification-icon">
+                            <span class="accordion-offer__notification-number">5</span>
+                          </div> </strong>
+                          <span>Details ausblenden</span>
+                        </button>
+                        
+                        <div
+                          id="collapse2"
+                          class="accordion-collapse accordion-collaps-parent-2 collapse"
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionParent-2"
+                        >
+                        <!--
 
-                      <th class="table-custom__col" scope="col">Weitere Angaben</th>
-                      <th class="table-custom__col" scope="col">
-                        Details
-                      </th>
+                            CHILD ACCORDION
 
+                        -->
+                          <div class="accordion-offer__content">
+                            <div class="accordion" id="accordionChild-2">
+                                <div class="accordion-item accordion-custom">
+                                  <h2
+                                    class="accordion-header accordion-custom__header"
+                                    id="headingOne"
+                                  >
+                                    <button
+                                      class="accordion-button accordion-custom__button collapsed"
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target=".accordion-collapse-child-2"
+                                      aria-expanded="false"
+                                      aria-controls="collapseOne"
+                                    >
+                                      <strong>E-Payment - Basisangebot</strong>
+                  
+                                    <span>Details ausblenden</span>
+                  
+                                    </button>
+                                  </h2>
+                                  <div class="accordion-offer__tools">
+                                    <ul class="accordion-offer__list">
+                                        <li class="accordion-offer__item"><a class="accordion-offer__link" href="#"> <span>Auf die Merkliste</span><i class="fa-light fa-star"></i></a></li>
+                                        <li class="accordion-offer__item"><a class="accordion-offer__link" href="#"> <span>Auf die Merkliste</span><i class="fa-light fa-print"></i></a></li>
+        
+                                        <li class="accordion-offer__item"><a class="accordion-offer__link" href="#"> <span>Auf die Merkliste</span><i class="fa-light fa-trash"></i></a></li>
+        
+                                        <li class="accordion-offer__item"><a class="accordion-offer__link" href="#"> <span>Auf die Merkliste</span><i class="fa-light fa-pen"></i></a></li>
+        
+                                    </ul>
+                                </div>
+                                  <div class="table-responsive accordion-custom__table">
+                                    <table class="table table-custom">
+                                      <thead class="table-custom__heading">
+                                        <tr
+                                          id="collapse2"
+                                          class="accordion-collapse accordion-collapse-child-2 collapse"
+                                          aria-labelledby="headingOne"
+                                          data-bs-parent="#accordionChild-2"
+                                        >
+                                          <th class="table-custom__col" scope="col">Leistungs-Nr.</th>
+                                          <th class="table-custom__col" scope="col">
+                                            Bezeichnung
+                                          </th>
+                                          <th class="table-custom__col" scope="col">
+                                            Menge
+                                          </th>
+                                          <th class="table-custom__col" scope="col">
+                                            Einheit
+                                          </th>
+                                          <th class="table-custom__col" scope="col">Einzelentgelt</th>
+                                          <th class="table-custom__col" scope="col">∑ lfd. Kosten</th>
+                    
+                                          <th class="table-custom__col" scope="col">∑ einm. Kosten</th>
+                    
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tbody
+                                          id="collapse2"
+                                          class="accordion-collapse accordion-collapse-child-2 collapse"
+                                          aria-labelledby="headingOne"
+                                          data-bs-parent="#accordionChild-2"
+                                        >
+                                          <tr class="table-custom__row">
+                                            <th class="table-custom__row-heading" scope="row">
+                                              123456                          </th>
+                                            <td>
+                  Basis.E-Payment Customizing
+                                            </td>
+                                            <td>1</td>
+                                            <td class="text-decoration-underline">
+                                              PAUSCH
+                                            </td>
+                                            <td>366,00</td>
+                                            <td>-</td>
+                                            <td>366,00</td>
+                                          </tr>
+                                          <tr class="table-custom__row">
+                                            <th class="table-custom__row-heading" scope="row">
+                                              123456                          </th>
+                                            <td>
+                  Basis.E-Payment Customizing
+                                            </td>
+                                            <td>1</td>
+                                            <td class="text-decoration-underline">
+                                              PAUSCH
+                                            </td>
+                                            <td>366,00</td>
+                                            <td>-</td>
+                                            <td>366,00</td>
+                                          </tr>
+                                          <tr class="table-custom__row">
+                                            <th class="table-custom__row-heading" scope="row">
+                                              123456                          </th>
+                                            <td>
+                  Basis.E-Payment Customizing
+                                            </td>
+                                            <td>1</td>
+                                            <td class="text-decoration-underline">
+                                              PAUSCH
+                                            </td>
+                                            <td>366,00</td>
+                                            <td>-</td>
+                                            <td>366,00</td>
+                                          </tr>
+                                          <tr class="table-custom__row">
+                                            <th class="table-custom__row-heading" scope="row">
+                                              123456                          </th>
+                                            <td>
+                  Basis.E-Payment Customizing
+                                            </td>
+                                            <td>1</td>
+                                            <td class="text-decoration-underline">
+                                              PAUSCH
+                                            </td>
+                                            <td>366,00</td>
+                                            <td>-</td>
+                                            <td>366,00</td>
+                                          </tr>
+                                        </tbody>
+                                        <tr class="table-custom__row accordion-custom__total">
+                                          <th class="table-custom__row-heading hide-collapse" scope="row">
+                                                                      </th>
+                                          <td class="hide-collapse">
+                                          </td>
+                                          <td class="hide-collapse"></td>
+                                          <td class="text-decoration-underline hide-collapse">
+                                            
+                                          </td>
+                                          <td class=" fw-bold">Summe(n)</td>
+                                          <td class=" fw-bold">1.596,00</td>
+                                          <td class=" fw-bold">446,00</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div                         id="collapse2"
+                                  class="accordion-collapse collapse accordion-collapse-child-2"
+                                  aria-labelledby="headingOne"
+                                  data-bs-parent="#accordionChild-2"
+                                >
+                                <div class="table-responsive accordion-custom__table">
+                                  <table class="table table-custom">
+                                    <thead class="table-custom__heading">
+                  
+                                        <th class="table-custom__col" scope="col">Weitere Angaben</th>
+                                        <th class="table-custom__col" scope="col">
+                                          Details
+                                        </th>
+                  
+                  
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-custom__row">
+                                          <th class="table-custom__row-heading" scope="row">
+                                            Eingesetztes Finanzverfahren                          </th>
+                                          <td>
+                                            KM-Finanzen SAP BC Smart
+                                          </td>
+                                        </tr>
+                                        <tr class="table-custom__row">
+                                          <th class="table-custom__row-heading" scope="row">
+                                            Eingesetztes Finanzverfahren                          </th>
+                                          <td>
+                                            KM-Finanzen SAP BC Smart
+                                          </td>
+                                        </tr>
+                                        <tr class="table-custom__row">
+                                          <th class="table-custom__row-heading" scope="row">
+                                            Eingesetztes Finanzverfahren                          </th>
+                                          <td>
+                                            KM-Finanzen SAP BC Smart
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                  
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </h2>
+                    </div>
+                  </div>
 
-                  </thead>
-                  <tbody>
-                      <tr class="table-custom__row">
-                        <th class="table-custom__row-heading" scope="row">
-                          Eingesetztes Finanzverfahren                          </th>
-                        <td>
-                          KM-Finanzen SAP BC Smart
-                        </td>
-                      </tr>
-                      <tr class="table-custom__row">
-                        <th class="table-custom__row-heading" scope="row">
-                          Eingesetztes Finanzverfahren                          </th>
-                        <td>
-                          KM-Finanzen SAP BC Smart
-                        </td>
-                      </tr>
-                      <tr class="table-custom__row">
-                        <th class="table-custom__row-heading" scope="row">
-                          Eingesetztes Finanzverfahren                          </th>
-                        <td>
-                          KM-Finanzen SAP BC Smart
-                        </td>
-                      </tr>
-                    </tbody>
-                </table>
-              </div>
-            </div>
-
-              </div>
             </div>
           </div>
           <div class="row">
