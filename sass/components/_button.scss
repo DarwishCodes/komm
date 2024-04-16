@@ -28,7 +28,7 @@
   &:first-child:active &:active {
     background-color: $color-orange-2 !important;
     color: $color-green-dark-1 !important;
-    border: 2px solid $color-orange-2;
+    border: 2px solid $color-orange-2 !important;
     box-shadow: 0 0 0 0.25rem rgba($color-orange-2, 0.25) !important;
   }
 
@@ -38,16 +38,23 @@
   .btn:first-child:active,
   :not(.btn-check) + .btn:active {
     background-color: $color-orange-2 !important;
-    color: $color-green-dark-1;
+    color: $color-green-dark-1 !important;
     box-shadow: 0 0 0 0.25rem rgba($color-orange-2, 0.25) !important;
-    border: 2px solid $color-orange-2;
+    border: 2px solid $color-orange-2 !important;
   }
 
   &:focus-visible {
     background-color: $color-orange-2 !important;
     color: $color-green-dark-1 !important;
     box-shadow: 0 0 0 0.25rem rgba($color-orange-2, 0.25) !important;
-    border: 2px solid $color-orange-2;
+    border: 2px solid $color-orange-2 !important;
+  }
+
+  &:active {
+    background-color: $color-orange-2 !important;
+    color: $color-green-dark-1 !important;
+    box-shadow: 0 0 0 0.25rem rgba($color-orange-2, 0.25) !important;
+    border: 2px solid $color-orange-2 !important;
   }
 
   &--border {
