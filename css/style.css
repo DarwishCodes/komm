@@ -1175,6 +1175,9 @@ body {
 
 .warn-box {
   padding: 5rem; }
+  @media (max-width: 992px) {
+    .warn-box {
+      padding: 2rem; } }
   .warn-box--yellow {
     background-color: #f5eedc;
     border: 1px solid #f1c400; }

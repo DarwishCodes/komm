@@ -1,6 +1,9 @@
 .warn-box {
   padding: 5rem;
 
+  @include addMediaQuery(laptop) {
+    padding: 2rem;
+  }
   &--yellow {
     background-color: $color-orange-1;
     border: 1px solid $color-orange-2;
