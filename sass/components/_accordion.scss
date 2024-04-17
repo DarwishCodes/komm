@@ -7,6 +7,25 @@
   }
 
   &__total {
+    span {
+      font-size: 1.6rem;
+      font-weight: 400;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .hide-desktop {
+      display: none;
+    }
+
+    td {
+      text-align: right;
+      vertical-align: middle;
+
+      @include addMediaQuery(laptop) {
+        text-align: center;
+      }
+    }
     @include addMediaQuery(laptop) {
       display: flex;
       flex-direction: column;
@@ -88,6 +107,14 @@
 .accordion-collapse:not(.show) + tbody .hide-collapse {
   @include addMediaQuery(laptop) {
     display: none;
+  }
+}
+
+.accordion-collapse:not(.show) + tbody {
+  .show-laptop {
+    @include addMediaQuery(laptop) {
+      display: block !important;
+    }
   }
 }
 
