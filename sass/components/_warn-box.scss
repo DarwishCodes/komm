@@ -1,5 +1,13 @@
 .warn-box {
   padding: 5rem;
-  background-color: $color-orange-1;
-  border: 1px solid $color-orange-2;
+
+  &--yellow {
+    background-color: $color-orange-1;
+    border: 1px solid $color-orange-2;
+  }
+
+  &--green {
+    background-color: $color-green-7;
+    border: 1px solid $color-green-6;
+  }
 }

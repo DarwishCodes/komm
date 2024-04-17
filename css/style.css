@@ -1174,9 +1174,13 @@ body {
     width: 11.2%; }
 
 .warn-box {
-  padding: 5rem;
-  background-color: #f5eedc;
-  border: 1px solid #f1c400; }
+  padding: 5rem; }
+  .warn-box--yellow {
+    background-color: #f5eedc;
+    border: 1px solid #f1c400; }
+  .warn-box--green {
+    background-color: #00ba7333;
+    border: 1px solid #007749e6; }
 
 .footer {
   padding: 1.5rem 0;
