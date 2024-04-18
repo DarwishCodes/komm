@@ -31,6 +31,10 @@
     margin-top: 2rem;
   }
 
+  &__invalid {
+    border: 1px solid $color-red-1;
+  }
+
   &__input:focus {
     border: 2px solid $color-grey-5;
     box-shadow: 0 0 0 0.25rem rgba($color-green-dark-1, 0.25);

@@ -12,14 +12,11 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == x.length - 1) {
-    document.getElementById("btn-inner").innerHTML = `<a
-    href="thank-you.html"
-    class="btn btn-primary"
-    type="button"
-    id="nextBtn">submit</a>`;
+    document.getElementById("btn-inner").innerHTML = submitText;
+    console.log("final");
   } else {
-    document.getElementById("nextBtn").innerHTML =
-      'weiter <i class="fa-solid fa-chevron-right"></i>';
+    document.getElementById("btn-inner").innerHTML = nextText;
+    console.log("prev");
   }
   // ... and run a function that displays the correct step indicator:
   fixStepIndicator(n);
@@ -58,7 +55,7 @@ function validateForm() {
     // If a field is empty...
     if (y[i].value == "") {
       // add an "invalid" class to the field:
-      y[i].className += " invalid";
+      y[i].className += " custom-form__invalid";
       // and set the current valid status to false:
       valid = false;
     }

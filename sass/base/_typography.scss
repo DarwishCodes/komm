@@ -84,6 +84,15 @@ body {
     &--font-weight-600 {
       font-weight: 600;
     }
+
+    small {
+      font-size: 1.4rem;
+      color: $color-green-dark-1;
+    }
+
+    strong {
+      margin-right: 2.5rem;
+    }
   }
 }
 

@@ -76,6 +76,11 @@ body {
     font-weight: 700; }
   .heading--fourth--font-weight-600 {
     font-weight: 600; }
+  .heading--fourth small {
+    font-size: 1.4rem;
+    color: #003a40; }
+  .heading--fourth strong {
+    margin-right: 2.5rem; }
 
 .paragraph {
   color: #0f2c30;
@@ -245,6 +250,9 @@ body {
 
 .accordion-collapse.show + tbody .accordion-custom__total {
   display: table-row; }
+
+.accordion-collapse.show + tbody .d-none-collapsed {
+  display: none; }
 
 .accordion {
   padding: 0; }
@@ -736,6 +744,9 @@ body {
   color: #de3400;
   font-size: 1.6rem;
   margin-top: 2rem; }
+
+.custom-form__invalid {
+  border: 1px solid #de3400; }
 
 .custom-form__input:focus {
   border: 2px solid #003a401f;
